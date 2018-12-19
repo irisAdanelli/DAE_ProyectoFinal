@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEvaMovil.Views.Reticulas.FicViCatReticulasUpdate">
+    <ContentPage.Content >
+        <ScrollView >
+            <StackLayout VerticalOptions="StartAndExpand"
+            Padding="20">
+                <Label  Text="Id Tipo General Plan de Estudios"/>
+                <Entry Text="{Binding Reticulas.IdTipoGenPlanEstudios}" />
+                <Label  Text="Id General Plan de Estudios"/>
+                <Entry Text="{Binding Reticulas.IdGenPlanEstudios}"/>
+                <Label Text="Clave Reticulas"/>
+                <Entry Text="{Binding Reticulas.Clave}"/>
+                <Label Text="Des Reticulas"/>
+                <Entry Text="{Binding Reticulas.DesReticula}"/>
+                <Label Text="Actual"/>
+                <Entry Text="{Binding Reticulas.Actual}"/>
+                <Label Text="Activo: "/>
+                <Entry Text="{Binding Reticulas.Activo}"/>
+                <!--<Switch IsToggled="{Binding Reticulas.Activo}"></Switch>-->
+                <Label Text="Borrado: "/>
+                <Entry Text="{Binding Reticulas.Borrado}"/>
+                <!--<Switch IsToggled="{Binding Reticulas.Borrar}"></Switch>-->
+
+                
+                <Button BackgroundColor="LightCoral" Text="Actualizar"  Command="{Binding FicMetUpdateCommand}"/>
+                <Button BackgroundColor="LightCoral" Text="Cancelar" Command="{Binding BackNavgCommand}"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

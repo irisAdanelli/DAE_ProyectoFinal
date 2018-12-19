@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+             xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:syncfusion="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
+             x:Class="AppEvaMovil.Views.Reticulas.FicViCatReticulasList"
+             Title="Reticulas">
+
+    <ContentPage.ToolbarItems BackgroundColor="LightCoral">
+        <ToolbarItem 
+            Name="Ver Reticulas"
+            Command="{Binding FicMetDetailsCommand}">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <!--<On Platform="Android, iOS" Value="ic_details"/>-->
+                    <On Platform="UWP" Value="Assets/ic_details.png"/>
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+
+        <ToolbarItem 
+            Name="Nueva Reticula"
+            Command="{Binding FicMetAddCommand}">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <!--<On Platform="Android, iOS" Value="ic_add"/>-->
+                    <On Platform="UWP" Value="Assets/ic_add.png" />
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+
+        <ToolbarItem 
+            Name="Editar Reticula"
+            Command="{Binding FicMetEditCommand}">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <!--<On Platform="Android, iOS" Value="ic_edit" />-->
+                    <On Platform="UWP" Value="Assets/ic_edit.png" />
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+
+        <ToolbarItem 
+            Name="Eliminar Reticula"
+            Clicked="FicMetDeleteCommand">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <!--<On Platform="Android, iOS" Value="ic_delete" />-->
+                    <On Platform="UWP" Value="Assets/ic_delete.png" />
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <Grid
+            Padding="5"
+            ColumnSpacing="5"
+            RowSpacing="5"
+            HorizontalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <SearchBar Placeholder="Buscar" Grid.Row="0" Grid.ColumnSpan="4" SearchButtonPressed="FicSearchButtonPressed" x:Name="FicSearchBar"/>
+            <syncfusion:SfDataGrid Grid.Row="1" Grid.ColumnSpan="4"
+                ColumnSizer="Star"
+                AutoGenerateColumns="False"
+                AllowSorting="False"
+                ItemsSource="{Binding SfDataGrid_ItemSource_Reticulas}"
+                SelectedItem="{Binding SfDataGrid_SelectItem_Reticulas, Mode=TwoWay}"
+                SelectionMode="Single"
+                x:Name="dataGrid">
+                <syncfusion:SfDataGrid.Columns x:TypeArguments="syncfusion:Columns">
+                    <!--<Label Text="{Binding AsignaturaAnterior.IdReticula}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="0"/>
+                    <Label Text="{Binding AsignaturaAnterior.IdTipoGeneralReticulas}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="1"/>
+                    <Label Text="{Binding AsignaturaAnterior.IdTipoGeneralNivelEscolar}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="2"/>
+                    <Label Text="{Binding AsignaturaAnterior.Clave}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="3"/>
+                    <Label Text="{Binding AsignaturaAnterior.DesReticula}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="4"/>
+                    <Label Text="{Binding AsignaturaAnterior.Actual}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="5"/>
+                    <Label Text="{Binding AsignaturaAnterior.Activo}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="6"/>
+                    <Label Text="{Binding AsignaturaAnterior.Borrado}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="7"/>-->
+
+                    <syncfusion:GridTextColumn HeaderText="IdReticula" MappingName="IdReticula" />
+                    <syncfusion:GridTextColumn HeaderText="IdTipoGenPlanEstudios" MappingName="IdTipoGenPlanEstudios" />
+                    <syncfusion:GridTextColumn HeaderText="IdGenPlanEstudios" MappingName="IdGenPlanEstudios" />
+                    <syncfusion:GridTextColumn HeaderText="Clave"  MappingName="Clave" />
+                    <syncfusion:GridTextColumn HeaderText="DesReticula"  MappingName="DesReticula" />
+                    <syncfusion:GridTextColumn HeaderText="Actual"  MappingName="Actual" />
+                    <syncfusion:GridTextColumn HeaderText="Activo"  MappingName="Activo" />
+                    <syncfusion:GridTextColumn HeaderText="Borrado"  MappingName="Borrado" />
+
+                </syncfusion:SfDataGrid.Columns>
+            </syncfusion:SfDataGrid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

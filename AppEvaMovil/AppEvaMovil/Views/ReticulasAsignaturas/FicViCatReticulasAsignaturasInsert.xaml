@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEvaMovil.Views.ReticulasAsignaturas.FicViCatReticulasAsignaturasInsert">
+  <ContentPage.Content>
+        <ScrollView>
+            <StackLayout
+                VerticalOptions="StartAndExpand"
+                Padding="25">
+
+                <!--<Label Text="Id Reticula Asignatura"/>
+                <Entry IsEnabled="False" Text="{Binding ReticulasAsignaturas.IdReticulaAsignatura}"/>-->
+                
+                <Label  Text="Id Reticula"/>
+                <Entry Text="{Binding ReticulasAsignaturas.IdReticula}"/>
+
+                <Label  Text="Id Asignatura"/>
+                <Entry Text="{Binding ReticulasAsignaturas.IdAsignatura}"/>
+
+                <Label Text="Creditos"/>
+                <Entry Text="{Binding ReticulasAsignaturas.Creditos}"/>
+
+                <Label Text="Horas de Teoria"/>
+                <Entry Text="{Binding ReticulasAsignaturas.HorasTeoria}"/>
+
+                <Label  Text="Horas de Practica"/>
+                <Entry Text="{Binding ReticulasAsignaturas.HorasPractica}"/>
+
+                <Label  Text="Semestre"/>
+                <Entry Text="{Binding ReticulasAsignaturas.Semestre}"/>
+
+                <Label Text="Order Certificado"/>
+                <Entry Text="{Binding ReticulasAsignaturas.OrderCertificado}"/>
+
+                <Label Text="Creditos Prerequisito"/>
+                <Entry Text="{Binding ReticulasAsignaturas.CreditosPrerequisito}"/>
+
+                <Label Text="Id Tipo Estatus"/>
+                <Entry Text="{Binding ReticulasAsignaturas.IdTipoEstatus}"/>
+
+                <Label  Text="Id Estatus"/>
+                <Entry Text="{Binding ReticulasAsignaturas.IdEstatus}"/>
+
+                <Label  Text="Especialidad"/>
+                <Entry Text="{Binding ReticulasAsignaturas.Especialidad}"/>
+
+                <Label Text="Fecha UltMod"/>
+                <Entry Text="{Binding ReticulasAsignaturas.FechaUltMod}"/>
+
+                <Label Text="Usuario Mod"/>
+                <Entry Text="{Binding ReticulasAsignaturas.UsuarioMod}"/>
+
+                <Label Text="Activo "/>
+                <Entry Text="{Binding ReticulasAsignaturas.Activo}"/>
+                <!--<Switch IsToggled="{Binding Reticulas.Activo}"></Switch>-->
+                <Label Text="Borrado "/>
+                <Entry Text="{Binding ReticulasAsignaturas.Borrado}"/>
+                <!--<Switch IsToggled="{Binding Reticulas.Borrar}"></Switch>-->
+
+                <Button BackgroundColor="LightCoral" Text="Agregar"  Command="{Binding FicMetAddCommand}"/>
+                <Button BackgroundColor="LightCoral" Text="Cancelar" Command="{Binding BackNavgCommand}"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

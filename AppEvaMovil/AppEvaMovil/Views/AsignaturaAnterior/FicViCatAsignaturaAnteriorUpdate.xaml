@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEvaMovil.Views.AsignaturaAnterior.FicViCatAsignaturaAnteriorUpdate"
+             xmlns:numeric="clr-namespace:Syncfusion.SfNumericUpDown.XForms;assembly=Syncfusion.SfNumericUpDown.XForms"
+             Title="Actualizar Asignatura Ant">
+  <ContentPage.Content>
+        <ScrollView>
+            <StackLayout VerticalOptions="StartAndExpand"
+            Padding="20">
+                <Label Text="Asignatura"/>
+                <Entry Text="{Binding AsignaturaAnterior.IdAsignatura}"/>
+
+                <Label Text="Asignatura Anterior"/>
+                <Entry Text="{Binding AsignaturaAnterior.IdAsignaturaAnterior}"/>
+
+                <Label Text="Id Reticula"/>
+                <Entry Text="{Binding AsignaturaAnterior.IdReticula}"/>
+
+                <Label Text="Activo: "/>
+                <Entry Text="{Binding Reticulas.Activo}"/>
+                <!--<Switch IsToggled="{Binding Reticulas.Activo}"></Switch>-->
+                <Label Text="Borrado: "/>
+                <Entry Text="{Binding Reticulas.Borrado}"/>
+                <!--<Switch IsToggled="{Binding Reticulas.Borrar}"></Switch>-->
+
+                
+                <Button Text="Actualizar"  Command="{Binding FicMetUpdateCommand}"/>
+                <Button Text="Cancelar" Command="{Binding BackNavgCommand}"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

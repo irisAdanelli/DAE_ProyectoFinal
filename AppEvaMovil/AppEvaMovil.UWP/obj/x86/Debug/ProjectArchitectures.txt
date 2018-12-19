@@ -1,0 +1,1 @@
+C:\Users\Hector\source\repos\AppEvaMovil\AppEvaMovil\AppEvaMovil.UWP\AppEvaMovil.UWP.csproj;x86

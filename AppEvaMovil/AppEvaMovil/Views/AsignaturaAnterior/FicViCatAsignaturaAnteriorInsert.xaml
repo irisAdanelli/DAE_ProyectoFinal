@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEvaMovil.Views.AsignaturaAnterior.FicViCatAsignaturaAnteriorInsert"
+             Title="Definir nueva asignatura anterior">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout
+                VerticalOptions="StartAndExpand"
+                Padding="25">
+                                    <!--IdAsignatura ClaveAsignatura DesAsignatura Matricula
+                                    Actual FechaPlanEstudios NombreCorto
+                                    Creditos FachaReg  FechaUltMod UsuarioMod
+                                    UsuarioReg Activo Borrar IdGeneralAsignatura
+                                    IdTipoGeneralAsignatura IdTipoGeneralNivelEscolar IdGeneralNivelEscolar-->
+                <Label  Text="IdAsignatura"/>
+                <Entry Text="{Binding AsignaturaAnterior.IdAsignatura}"/>
+                <Label  Text="ClaveAsignatura"/>
+                <Entry Text="{Binding AsignaturaAnterior.ClaveAsignatura}"/>
+                <Label Text="DesAsignatura"/>
+                <Entry Text="{Binding AsignaturaAnterior.DesAsignatura}"/>
+                <!--syncfusion:SFAutoComplete.ItemTemplate-->
+                <!--<Label Text="Prioridad"/>
+                <numeric:SfNumericUpDown 
+                StepValue="1"
+                AllowNull="false"
+                Minimum="0"
+                Maximum="100"
+                SpinButtonAlignment="Right"
+                ValueChanged="Handle_ValueChanged" />-->
+
+                <Label Text="Matricula"/>
+                <Entry Text="{Binding AsignaturaAnterior.Matricula}"/>
+
+                <Label Text="Actual"/>
+                <Entry Text="{Binding AsignaturaAnterior.Actual}"/>
+
+                <Label Text="FechaPlanEstudios "/>
+                <Entry Text="{Binding AsignaturaAnterior.FechaPlanEstudios}"/>
+                
+                <Label Text="NombreCorto: "/>
+                <Entry Text="{Binding AsignaturaAnterior.NombreCorto}"/>
+
+                <Label Text="Creditos"/>
+                <Entry Text="{Binding AsignaturaAnterior.Creditos}"/>
+
+                <Label Text="FachaReg"/>
+                <Entry Text="{Binding AsignaturaAnterior.FachaReg}"/>
+
+                <Label Text="FechaUltMod "/>
+                <Entry Text="{Binding AsignaturaAnterior.FechaUltMod}"/>
+
+                <Label Text="UsuarioMod "/>
+                <Entry Text="{Binding AsignaturaAnterior.UsuarioMod}"/>
+                 
+                 <Label Text="UsuarioReg"/>
+                <Entry Text="{Binding AsignaturaAnterior.UsuarioReg}"/>
+
+                <Label Text="Activo"/>
+                <Entry Text="{Binding AsignaturaAnterior.Activo}"/>
+
+                <Label Text="Borrar "/>
+                <Entry Text="{Binding AsignaturaAnterior.Borrar}"/>
+
+                <Label Text="IdGeneralAsignatura "/>
+                <Entry Text="{Binding AsignaturaAnterior.IdGeneralAsignatura}"/>
+             
+                  
+                <Label Text="IdTipoGeneralAsignatura"/>
+                <Entry Text="{Binding AsignaturaAnterior.IdTipoGeneralAsignatura}"/>
+
+                <Label Text="IdTipoGeneralNivelEscolar "/>
+                <Entry Text="{Binding AsignaturaAnterior.IdTipoGeneralNivelEscolar}"/>
+
+                <Label Text="IdGeneralNivelEscolar "/>
+                <Entry Text="{Binding AsignaturaAnterior.IdGeneralNivelEscolar}"/>
+
+                <Button Text="Agregar"  Command="{Binding FicMetAddCommand}"/>
+                <Button Text="Cancelar" Command="{Binding BackNavgCommand}"/>
+
+            </StackLayout>
+        </ScrollView>
+        </ContentPage.Content>
+</ContentPage>

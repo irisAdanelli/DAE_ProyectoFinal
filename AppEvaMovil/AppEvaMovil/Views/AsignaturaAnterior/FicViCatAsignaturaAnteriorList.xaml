@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:syncfusion="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
+             x:Class="AppEvaMovil.Views.AsignaturaAnterior.FicViCatAsignaturaAnteriorList"
+             Title="Asignatura Anterior">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem 
+            Name="Ver Asignatura ant"
+            Command="{Binding FicMetDetailsCommand}">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <!--<On Platform="Android, iOS" Value="ic_details"/>-->
+                    <On Platform="UWP" Value="Assets/ic_details.png" />
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+
+        <ToolbarItem 
+            Name="Nuevo Asignatura ant"
+            Command="{Binding FicMetAddCommand}">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <!--<On Platform="Android, iOS" Value="ic_add"/>-->
+                    <On Platform="UWP" Value="Assets/ic_add.png" />
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+
+        <ToolbarItem 
+            Name="Editar Asignatura ant"
+            Command="{Binding FicMetEditCommand}">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <!--<On Platform="Android, iOS" Value="ic_edit" />-->
+                    <On Platform="UWP" Value="Assets/ic_edit.png" />
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+
+        <ToolbarItem 
+            Name="Eliminar Asignatura ant"
+            Clicked="FicMetDeleteCommand">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <!--<On Platform="Android, iOS" Value="ic_delete" />-->
+                    <On Platform="UWP" Value="Assets/ic_delete.png" />
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+        </ContentPage.ToolbarItems>
+
+        <ContentPage.Content>
+            <Grid
+            Padding="5"
+            ColumnSpacing="5"
+            RowSpacing="5"
+            HorizontalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <SearchBar Placeholder="Buscar" Grid.Row="0" Grid.ColumnSpan="4" SearchButtonPressed="FicSearchButtonPressed" x:Name="FicSearchBar"/>
+                <syncfusion:SfDataGrid Grid.Row="1" Grid.ColumnSpan="4"
+                ColumnSizer="Star"
+                AutoGenerateColumns="False"
+                AllowSorting="False"
+                ItemsSource="{Binding SfDataGrid_ItemSource_AsignaturaAnterior}"
+                SelectedItem="{Binding SfDataGrid_SelectItem_AsignaturaAnterior, Mode=TwoWay}"
+                SelectionMode="Single"
+                x:Name="dataGrid">
+                    <syncfusion:SfDataGrid.Columns x:TypeArguments="syncfusion:Columns">
+                    <syncfusion:GridTextColumn HeaderText="IdReticula" MappingName="IdReticula" />
+                    <syncfusion:GridTextColumn HeaderText="IdAsignatura" MappingName="IdAsignatura" />
+                    <syncfusion:GridTextColumn HeaderText="IdAsignaturaAnterior" MappingName="IdAsignaturaAnterior" />
+                    <syncfusion:GridTextColumn HeaderText="UsuarioReg"  MappingName="UsuarioReg" />
+                    <syncfusion:GridTextColumn HeaderText="UsuarioMod"  MappingName="UsuarioMod" />
+                    <syncfusion:GridTextColumn HeaderText="FechaReg"  MappingName="FechaReg" />
+                </syncfusion:SfDataGrid.Columns>
+                </syncfusion:SfDataGrid>
+            </Grid>
+        </ContentPage.Content>
+</ContentPage>

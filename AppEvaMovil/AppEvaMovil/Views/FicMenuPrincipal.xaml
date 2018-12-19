@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEvaMovil.Views.FicMenuPrincipal">
+    <ContentPage.Content>
+        <StackLayout Orientation="Horizontal" Margin="20,20,20,10" HorizontalOptions="FillAndExpand">
+            <Label Text="Reticulas List"/>
+            <Button Command="{Binding FicMetListReticulaCommand}" Text="Reticulas List" BackgroundColor="LightCoral" WidthRequest="200" HeightRequest="20" Margin="10,0,10,0" FontAttributes="Bold" HorizontalOptions="Fill"/>
+
+            <Label Text="Asignaturas List"/>
+            <Button Command="{Binding FicMetListAsignaturaCommand}" Text="Asignaturas List" BackgroundColor="LightCoral" WidthRequest="200" HeightRequest="20" Margin="10,0,10,0" FontAttributes="Bold" HorizontalOptions="FillAndExpand"/>
+
+            <Label Text="Asignaturas Anterior List"/>
+            <Button Command="{Binding FicMetListAsigAnterioirCommand}" Text="Asignatura Anterior List" BackgroundColor="LightCoral" WidthRequest="200" HeightRequest="20" Margin="10,0,10,0" FontAttributes="Bold" HorizontalOptions="FillAndExpand"/>
+
+            <Label Text="Reticulas Asignaturas"/>
+            <Button Command="{Binding FicMetRetAsignaturaCommand}" Text="Reticulas Asignaturas List" BackgroundColor="LightCoral" WidthRequest="200" HeightRequest="20" Margin="10,0,10,0" FontAttributes="Bold" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

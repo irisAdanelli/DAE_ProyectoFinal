@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEvaMovil.Views.AsignaturaAnterior.FicViCatAsignaturaAnteriorItem"
+              Title="Asignatura Anterior">
+  <ContentPage.ToolbarItems>
+        <ToolbarItem>
+            <!--nombre
+                 ruta-->
+        </ToolbarItem>
+        </ContentPage.ToolbarItems>
+        <ContentPage.Content>
+            <ScrollView>
+                <StackLayout
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                Padding="25, 25, 25, 12">
+                    <ScrollView
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand">
+                        <Grid
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        RowSpacing="8"
+                        ColumnSpacing="8"
+                        Padding="18">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Id Reticula: " HorizontalOptions="EndAndExpand" Grid.Column="0" Grid.Row="0"/>
+                            <Label Text="Id Asignatura: " HorizontalOptions="EndAndExpand" Grid.Column="0" Grid.Row="1"/>
+                            <Label Text="Id Asignatura Anterior: " HorizontalOptions="EndAndExpand" Grid.Column="0" Grid.Row="2"/>
+                            <Label Text="Fecha registro: " HorizontalOptions="EndAndExpand" Grid.Column="0" Grid.Row="3"/>
+                            <Label Text="Ultima mod: " HorizontalOptions="EndAndExpand" Grid.Column="0" Grid.Row="4"/>
+                            <Label Text="Usuario: " HorizontalOptions="EndAndExpand" Grid.Column="0" Grid.Row="5"/>
+                            <Label Text="Activo: " HorizontalOptions="EndAndExpand" Grid.Column="0" Grid.Row="6"/>
+                            <Label Text="Borrado: " HorizontalOptions="EndAndExpand" Grid.Column="0" Grid.Row="7"/>
+
+
+                            <Label Text="{Binding AsignaturaAnterior.IdReticula}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="0"/>
+                            <Label Text="{Binding AsignaturaAnterior.IdAsignatura}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="1"/>
+                            <Label Text="{Binding AsignaturaAnterior.IdAsignaturaanterior}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="2"/>
+                            <Label Text="{Binding AsignaturaAnterior.FechaReg}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="3"/>
+                            <Label Text="{Binding AsignaturaAnterior.FechaUltMod}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="4"/>
+                            <Label Text="{Binding AsignaturaAnterior.UsuarioReg}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="5"/>
+                            <Label Text="{Binding AsignaturaAnterior.Activo}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="6"/>
+                            <Label Text="{Binding AsignaturaAnterior.Borrado}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="7"/>
+                        </Grid>
+                    </ScrollView>
+                    <StackLayout Orientation="Horizontal" Margin="20,20,20,10" HorizontalOptions="FillAndExpand">
+                        <Button Command="{Binding FicMetEditCommand}" Text="Editar" BackgroundColor="LightCoral" WidthRequest="200" HeightRequest="50" Margin="10,0,10,0" FontAttributes="Bold" HorizontalOptions="FillAndExpand"/>
+                        <Button Text="Eliminar" BackgroundColor="LightCoral" WidthRequest="200" HeightRequest="50" Margin="10,0,10,0" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Clicked="FicMetDeleteCommand" />
+                        <Button Command="{Binding BackNavgCommand}" Text="Cancelar" BackgroundColor="LightCoral" WidthRequest="200" HeightRequest="50" Margin="10,0,10,0" FontAttributes="Bold" HorizontalOptions="FillAndExpand"/>
+                    </StackLayout>
+
+                </StackLayout>
+            </ScrollView>
+        </ContentPage.Content>
+</ContentPage>

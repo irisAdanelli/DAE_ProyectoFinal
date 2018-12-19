@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEvaMovil.Views.ReticulasAsignaturas.FicViCatReticulasAsignaturasItem">
+  <ContentPage.ToolbarItems>
+        <ToolbarItem>
+            <!--nombre
+                 ruta-->
+        </ToolbarItem>
+        </ContentPage.ToolbarItems>
+        <ContentPage.Content>
+            <ScrollView>
+                <StackLayout
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                Padding="25, 25, 25, 12">
+                    <ScrollView
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand">
+                        <Grid
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        RowSpacing="8"
+                        ColumnSpacing="8"
+                        Padding="18">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                                    <Label Text="IdReticulaAsignatura: " HorizontalOptions="EndAndExpand" Grid.Column="0" Grid.Row="0"/>
+                                    <Label Text="IdReticula: " HorizontalOptions="EndAndExpand" Grid.Column="0" Grid.Row="1"/>
+                                    <Label Text="IdAsignatura: " HorizontalOptions="EndAndExpand" Grid.Column="0" Grid.Row="2"/>
+                                    <Label Text="Creditos: " HorizontalOptions="EndAndExpand" Grid.Column="0" Grid.Row="3"/>
+                                    <Label Text="HorasTeoria: " HorizontalOptions="EndAndExpand" Grid.Column="0" Grid.Row="4"/>
+                                    <Label Text="HorasPractica: " HorizontalOptions="EndAndExpand" Grid.Column="0" Grid.Row="5"/>
+                                    <Label Text="Semestre: " HorizontalOptions="EndAndExpand" Grid.Column="0" Grid.Row="6"/>
+                                    <Label Text="OrderCertificado: " HorizontalOptions="EndAndExpand" Grid.Column="0" Grid.Row="7"/>
+                                    <Label Text="CreditosPrerequisito: " HorizontalOptions="EndAndExpand" Grid.Column="0" Grid.Row="8"/>
+                                    <Label Text="IdTipoEstatus: " HorizontalOptions="EndAndExpand" Grid.Column="0" Grid.Row="9"/>
+                                    <Label Text="IdEstatus: " HorizontalOptions="EndAndExpand" Grid.Column="0" Grid.Row="10"/>
+                                    <Label Text="Especialidad: " HorizontalOptions="EndAndExpand" Grid.Column="0" Grid.Row="11"/>
+                                    <Label Text="FechaReg: " HorizontalOptions="EndAndExpand" Grid.Column="0" Grid.Row="12"/>
+                                    <Label Text="FechaUltMod: " HorizontalOptions="EndAndExpand" Grid.Column="0" Grid.Row="13"/>
+                                    <Label Text="UsuarioReg: " HorizontalOptions="EndAndExpand" Grid.Column="0" Grid.Row="14"/>
+                                    <Label Text="UsuarioMod: " HorizontalOptions="EndAndExpand" Grid.Column="0" Grid.Row="15"/>
+                                    <Label Text="Activo: " HorizontalOptions="EndAndExpand" Grid.Column="0" Grid.Row="16"/>
+                                    <Label Text="Borrado: " HorizontalOptions="EndAndExpand" Grid.Column="0" Grid.Row="17"/>
+
+                        <Label Text="{Binding ReticulasAsignaturas.IdReticulaAsignatura}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="0"/>
+                        <Label Text="{Binding ReticulasAsignaturas.IdReticula}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="1"/>
+                        <Label Text="{Binding ReticulasAsignaturas.IdAsignatura}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="2"/>
+                        <Label Text="{Binding ReticulasAsignaturas.Creditos}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="3"/>
+                        <Label Text="{Binding ReticulasAsignaturas.HorasTeoria}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="4"/>
+                        <Label Text="{Binding ReticulasAsignaturas.HorasPractica}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="5"/>
+                        <Label Text="{Binding ReticulasAsignaturas.Semestre}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="6"/>
+                        <Label Text="{Binding ReticulasAsignaturas.OrderCertificado}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="7"/>
+                        <Label Text="{Binding ReticulasAsignaturas.CreditosPrerequisito}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="8"/>
+                        <Label Text="{Binding ReticulasAsignaturas.IdTipoEstatus}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="9"/>
+                        <Label Text="{Binding ReticulasAsignaturas.IdEstatus}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="10"/>
+                        <Label Text="{Binding ReticulasAsignaturas.Especialidad}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="11"/>
+                        <Label Text="{Binding ReticulasAsignaturas.FechaReg}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="12"/>
+                        <Label Text="{Binding ReticulasAsignaturas.FechaUltMod}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="13"/>
+                        <Label Text="{Binding ReticulasAsignaturas.UsuarioMod}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="14"/>
+                        <Label Text="{Binding ReticulasAsignaturas.UsuarioReg}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="15"/>
+                        <Label Text="{Binding ReticulasAsignaturas.Activo}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="16"/>
+                        <Label Text="{Binding ReticulasAsignaturas.Borrado}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="17"/>
+                        </Grid>
+                    </ScrollView>
+                    <StackLayout Orientation="Horizontal" Margin="20,20,20,10" HorizontalOptions="FillAndExpand">
+                        <Button Command="{Binding FicMetEditCommand}" Text="Editar" BackgroundColor="LightCoral" WidthRequest="200" HeightRequest="50" Margin="10,0,10,0" FontAttributes="Bold" HorizontalOptions="FillAndExpand"/>
+                        <Button Text="Eliminar" BackgroundColor="LightCoral" WidthRequest="200" HeightRequest="50" Margin="10,0,10,0" FontAttributes="Bold" HorizontalOptions="FillAndExpand" Clicked="FicMetDeleteCommand" />
+                        <Button Command="{Binding BackNavgCommand}" Text="Cancelar" BackgroundColor="LightCoral" WidthRequest="200" HeightRequest="50" Margin="10,0,10,0" FontAttributes="Bold" HorizontalOptions="FillAndExpand"/>
+                    </StackLayout>
+
+                </StackLayout>
+            </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEvaMovil.Views.Asignaturas.FicViCatAsignaturasUpdate">
+  <ContentPage.Content>
+        <ScrollView>
+            <StackLayout VerticalOptions="StartAndExpand"
+            Padding="20">
+                <Label Text="IdAsignatura"/>
+                <Entry IsEnabled="False" Text="{Binding Asignatura.IdAsignatura}"/>
+
+                <Label  Text="Id Tipo General Asignatura"/>
+                <Entry Text="{Binding Asignatura.IdTipoGeneralAsignatura}"/>
+                <Label  Text="Id Tipo General Nivel Escolar"/>
+                <Entry Text="{Binding Asignatura.IdTipoGeneralNivelEscolar}"/>
+                <Label  Text="IdGeneralAsignatura"/>
+                <Entry Text="{Binding Asignatura.IdGeneralAsignatura}"/>
+                <Label  Text="IdGeneralNivelEscolar"/>
+                <Entry Text="{Binding Asignatura.IdGeneralNivelEscolar}"/>
+
+                <Label Text="ClaveAsignatura"/>
+                <Entry Text="{Binding Asignatura.ClaveAsignatura}"/>
+
+                <Label Text="Des Asignatura"/>
+                <Entry Text="{Binding Asignatura.DesAsignatura}"/>
+                <Label Text="Matricula"/>
+                <Entry Text="{Binding Asignatura.Matricula}"/>
+
+                <Label  Text="Actual"/>
+                <Entry Text="{Binding Asignatura.Actual}"/>
+
+                <Label Text="FechaPlanEstudios"/>
+                <Entry Text="{Binding Asignatura.FechaPlanEstudios}"/>
+                <Label Text="ClaveAsignatura"/>
+                <Entry Text="{Binding Asignatura.ClaveAsignatura}"/>
+
+                <Label Text="Des Asignatura"/>
+                <Entry Text="{Binding Asignatura.DesAsignatura}"/>
+
+                <Label Text="NombreCorto"/>
+                <Entry Text="{Binding Asignatura.NombreCorto}"/>
+
+                <Label  Text="Creditos"/>
+                <Entry Text="{Binding Asignatura.Creditos}"/>
+
+                <Label Text="FechaReg"/>
+                <Entry Text="{Binding Asignatura.FechaReg}"/>
+                <Label Text="UsuarioReg"/>
+                <Entry Text="{Binding Asignatura.UsuarioReg}"/>
+
+                <Label Text="FechaUltMod"/>
+                <Entry Text="{Binding Asignatura.FechaUltMod}"/>
+
+                <Label Text="UsuarioMod"/>
+                <Entry Text="{Binding Asignatura.UsuarioMod}"/>
+
+                <Label Text="Activo: "/>
+                <Entry Text="{Binding Reticulas.Activo}"/>
+                <!--<Switch IsToggled="{Binding Reticulas.Activo}"></Switch>-->
+                <Label Text="Borrado: "/>
+                <Entry Text="{Binding Reticulas.Borrado}"/>
+                <!--<Switch IsToggled="{Binding Reticulas.Borrar}"></Switch>-->
+
+
+                <Button Text="Actualizar"  Command="{Binding FicMetUpdateCommand}"/>
+                <Button Text="Cancelar" Command="{Binding BackNavgCommand}"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
