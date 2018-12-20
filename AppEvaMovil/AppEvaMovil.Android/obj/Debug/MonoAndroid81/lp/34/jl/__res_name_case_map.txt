@@ -1,0 +1,5 @@
+Drawable/Icon.png;drawable/icon.png
+Drawable/dropdownbuttonimage.png;drawable/dropdownbuttonimage.png
+layout/CustomizedImageView.xml;layout/customizedimageview.xml
+layout/CustomizedView.xml;layout/customizedview.xml
+layout/sfcomboBox_layout.xml;layout/sfcombobox_layout.xml
