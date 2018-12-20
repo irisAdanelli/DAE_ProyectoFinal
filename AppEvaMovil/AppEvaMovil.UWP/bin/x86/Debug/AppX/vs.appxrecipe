@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\Hector\source\repos\AppEvaMovil\AppEvaMovil\AppEvaMovil.UWP\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>38727190392B0CE994CCC95AE101DE144E3E5714636349F0A9ADDAC28D9A2C92</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>43F6059A70345C499B5FEE51BA52197C16935B6A7B5AD21EAA51A71121AEFEBB</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>3e14f8c3-d324-4a1a-8cc7-1a840ac823ce_1.0.0.0_x86__y6sej491t49d2</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>3e14f8c3-d324-4a1a-8cc7-1a840ac823ce_y6sej491t49d2!App</RegisteredUserModeAppID>
     <RegisteredPackageID>3e14f8c3-d324-4a1a-8cc7-1a840ac823ce</RegisteredPackageID>
@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Hector\source\repos\AppEvaMovil\AppEvaMovil\AppEvaMovil.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-12-18T23:48:33.488</Modified>
+      <Modified>2018-12-20T04:40:08.657</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Hector\source\repos\AppEvaMovil\AppEvaMovil\AppEvaMovil.UWP\bin\x86\Debug\AppEvaMovil.UWP.exe">
       <PackagePath>entrypoint\AppEvaMovil.UWP.exe</PackagePath>
-      <Modified>2018-12-18T23:48:29.984</Modified>
+      <Modified>2018-12-20T04:39:56.575</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\autofac\4.8.1\lib\netstandard1.1\Autofac.dll">
       <PackagePath>Autofac.dll</PackagePath>
@@ -783,17 +783,17 @@
       <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
       <Modified>2018-05-02T17:44:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.licensing\16.3.0.21\lib\uap10.0\Syncfusion.Licensing.dll">
+    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.licensing\16.3.0.36\lib\uap10.0\Syncfusion.Licensing.dll">
       <PackagePath>Syncfusion.Licensing.dll</PackagePath>
-      <Modified>2018-09-21T18:39:06.000</Modified>
+      <Modified>2018-11-28T03:13:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.core\16.3.0.21\lib\uap10.0\Syncfusion.Core.XForms.UWP.dll">
+    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.core\16.3.0.36\lib\uap10.0\Syncfusion.Core.XForms.UWP.dll">
       <PackagePath>Syncfusion.Core.XForms.UWP.dll</PackagePath>
-      <Modified>2018-09-22T06:02:06.000</Modified>
+      <Modified>2018-11-26T17:17:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.core\16.3.0.21\lib\uap10.0\Syncfusion.Core.XForms.dll">
+    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.core\16.3.0.36\lib\uap10.0\Syncfusion.Core.XForms.dll">
       <PackagePath>Syncfusion.Core.XForms.dll</PackagePath>
-      <Modified>2018-09-22T06:02:06.000</Modified>
+      <Modified>2018-11-26T17:16:54.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.gridcommon\16.3.0.21\lib\uap10.0\Syncfusion.GridCommon.Portable.dll">
       <PackagePath>Syncfusion.GridCommon.Portable.dll</PackagePath>
@@ -814,6 +814,14 @@
     <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.sfautocomplete\16.3.0.21\lib\uap10.0\Syncfusion.SfShared.UWP.dll">
       <PackagePath>Syncfusion.SfShared.UWP.dll</PackagePath>
       <Modified>2018-09-18T04:50:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.sfcombobox\16.3.0.36\lib\uap10.0\Syncfusion.SfComboBox.XForms.UWP.dll">
+      <PackagePath>Syncfusion.SfComboBox.XForms.UWP.dll</PackagePath>
+      <Modified>2018-11-26T17:47:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.sfcombobox\16.3.0.36\lib\uap10.0\Syncfusion.SfComboBox.XForms.dll">
+      <PackagePath>Syncfusion.SfComboBox.XForms.dll</PackagePath>
+      <Modified>2018-11-26T17:47:02.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.sfdatagrid\16.3.0.21\lib\uap10.0\Syncfusion.Data.Portable.dll">
       <PackagePath>Syncfusion.Data.Portable.dll</PackagePath>
@@ -881,7 +889,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hector\source\repos\AppEvaMovil\AppEvaMovil\AppEvaMovil\bin\Debug\netstandard2.0\AppEvaMovil.dll">
       <PackagePath>AppEvaMovil.dll</PackagePath>
-      <Modified>2018-12-18T23:48:07.834</Modified>
+      <Modified>2018-12-20T04:39:30.995</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hector\source\repos\AppEvaMovil\AppEvaMovil\AppEvaMovil.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
@@ -1028,27 +1036,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hector\source\repos\AppEvaMovil\AppEvaMovil\AppEvaMovil.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2018-12-18T23:48:29.429</Modified>
+      <Modified>2018-12-20T04:39:55.705</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hector\source\repos\AppEvaMovil\AppEvaMovil\AppEvaMovil.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2018-12-18T23:48:29.429</Modified>
+      <Modified>2018-12-20T04:39:55.705</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2018-04-20T03:01:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.core\16.3.0.21\lib\uap10.0\Syncfusion.Core.XForms.UWP\Syncfusion.Core.XForms.UWP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.core\16.3.0.36\lib\uap10.0\Syncfusion.Core.XForms.UWP\Syncfusion.Core.XForms.UWP.xr.xml">
       <PackagePath>Syncfusion.Core.XForms.UWP\Syncfusion.Core.XForms.UWP.xr.xml</PackagePath>
-      <Modified>2018-09-22T06:02:06.000</Modified>
+      <Modified>2018-11-26T17:17:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.core\16.3.0.21\lib\uap10.0\Syncfusion.Core.XForms.UWP\ToggleIcons\ToggleCollapsedIcon.xbf">
+    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.core\16.3.0.36\lib\uap10.0\Syncfusion.Core.XForms.UWP\ToggleIcons\ToggleCollapsedIcon.xbf">
       <PackagePath>Syncfusion.Core.XForms.UWP\ToggleIcons\ToggleCollapsedIcon.xbf</PackagePath>
-      <Modified>2018-09-22T06:02:06.000</Modified>
+      <Modified>2018-11-26T17:17:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.core\16.3.0.21\lib\uap10.0\Syncfusion.Core.XForms.UWP\ToggleIcons\ToggleVisibleIcon.xbf">
+    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.core\16.3.0.36\lib\uap10.0\Syncfusion.Core.XForms.UWP\ToggleIcons\ToggleVisibleIcon.xbf">
       <PackagePath>Syncfusion.Core.XForms.UWP\ToggleIcons\ToggleVisibleIcon.xbf</PackagePath>
-      <Modified>2018-09-22T06:02:06.000</Modified>
+      <Modified>2018-11-26T17:17:28.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.sfnumericupdown\16.3.0.21\lib\uap10.0\Syncfusion.SfInput.UWP\Syncfusion.SfInput.UWP.xr.xml">
       <PackagePath>Syncfusion.SfInput.UWP\Syncfusion.SfInput.UWP.xr.xml</PackagePath>
@@ -1082,6 +1090,18 @@
       <PackagePath>Syncfusion.SfShared.UWP\Themes\generic.xbf</PackagePath>
       <Modified>2018-09-18T04:50:40.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.sfcombobox\16.3.0.36\lib\uap10.0\Syncfusion.SfComboBox.XForms.UWP\dropdownbuttonimage.png">
+      <PackagePath>Syncfusion.SfComboBox.XForms.UWP\dropdownbuttonimage.png</PackagePath>
+      <Modified>2018-11-20T00:58:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.sfcombobox\16.3.0.36\lib\uap10.0\Syncfusion.SfComboBox.XForms.UWP\Syncfusion.SfComboBox.XForms.UWP.xr.xml">
+      <PackagePath>Syncfusion.SfComboBox.XForms.UWP\Syncfusion.SfComboBox.XForms.UWP.xr.xml</PackagePath>
+      <Modified>2018-11-26T17:47:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.sfcombobox\16.3.0.36\lib\uap10.0\Syncfusion.SfComboBox.XForms.UWP\Themes\Generic.xbf">
+      <PackagePath>Syncfusion.SfComboBox.XForms.UWP\Themes\Generic.xbf</PackagePath>
+      <Modified>2018-11-26T17:47:30.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\xamarin.forms\3.4.0.1008975\lib\uap10.0\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
       <Modified>2018-11-14T03:15:20.000</Modified>
@@ -1089,11 +1109,11 @@
     <AppxPackagedFile Include="C:\Users\Hector\source\repos\AppEvaMovil\AppEvaMovil\AppEvaMovil.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-12-18T16:34:35.273</Modified>
+      <Modified>2018-12-20T04:40:05.794</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hector\source\repos\AppEvaMovil\AppEvaMovil\AppEvaMovil.UWP\bin\x86\Debug\Core\AppEvaMovil.UWP.exe">
       <PackagePath>AppEvaMovil.UWP.exe</PackagePath>
-      <Modified>2018-12-18T23:48:33.476</Modified>
+      <Modified>2018-12-20T04:40:08.641</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

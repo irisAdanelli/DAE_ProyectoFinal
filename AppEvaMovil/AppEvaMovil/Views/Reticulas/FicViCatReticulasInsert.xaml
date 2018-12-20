@@ -1,29 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
              x:Class="AppEvaMovil.Views.Reticulas.FicViCatReticulasInsert">
     <!--</ContentPage>-->
     <ContentPage.Content BackgroundColor="LightCoral">
         <ScrollView>
             <StackLayout
-                VerticalOptions="StartAndExpand"
+                VerticalOptions="StartAndExpand" 
                 Padding="25">
                 <Label  Text="Id Tipo General Plan de Estudios"/>
-                <Entry Text="{Binding Reticulas.IdTipoGenPlanEstudios}"/>
+                <!--<Entry Text="{Binding Reticulas.IdTipoGenPlanEstudios}"/>-->
+                <Picker
+                        ItemsSource="{Binding TipoPlanEstudiosDes}"
+                        ItemDisplayBinding="{Binding DesTipo}"
+                        SelectedItem="{Binding Selected_TipoPlanEstudios}"/>
+
                 <Label  Text="Id General Plan de Estudios"/>
-                <Entry Text="{Binding Reticulas.IdGenPlanEstudios}"/>
+                <!--<Entry Text="{Binding Reticulas.IdGenPlanEstudios}"/>-->
+                <Picker
+                        ItemsSource="{Binding PlanEstudiosDes}"
+                        ItemDisplayBinding="{Binding DesGeneral}"
+                        SelectedItem="{Binding Selected_PlanEstudios}"/>
+                
+                
                 <Label Text="Clave Reticulas"/>
                 <Entry Text="{Binding Reticulas.Clave}"/>
                 <Label Text="Des Reticulas"/>
                 <Entry Text="{Binding Reticulas.DesReticula}"/>
                 <Label Text="Actual"/>
-                <Entry Text="{Binding Reticulas.Actual}"/>
+                <!--<Entry Text="{Binding Reticulas.Actual}"/>-->
+                <Switch IsToggled="{Binding Reticulas.Actual}"></Switch>
                 <Label Text="Activo: "/>
-                <Entry Text="{Binding Reticulas.Activo}"/>
-                <!--<Switch IsToggled="{Binding Reticulas.Activo}"></Switch>-->
+                <!--<Entry Text="{Binding Reticulas.Activo}"/>-->
+                <Switch IsToggled="{Binding Reticulas.Activo}"></Switch>
                 <Label Text="Borrado: "/>
-                <Entry Text="{Binding Reticulas.Borrado}"/>
-                <!--<Switch IsToggled="{Binding Reticulas.Borrar}"></Switch>-->
+                <!--<Entry Text="{Binding Reticulas.Borrado}"/>-->
+                <Switch IsToggled="{Binding Reticulas.Borrar}"></Switch>
 
                 <Button BackgroundColor="LightCoral" Text="Agregar"  Command="{Binding FicMetAddCommand}"/>
                 <Button BackgroundColor="LightCoral" Text="Cancelar" Command="{Binding BackNavgCommand}"/>

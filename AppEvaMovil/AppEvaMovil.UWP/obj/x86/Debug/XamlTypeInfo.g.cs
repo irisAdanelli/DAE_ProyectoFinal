@@ -213,7 +213,7 @@ namespace AppEvaMovil.UWP.AppEvaMovil_UWP_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[7];
+            _typeNameTable = new string[8];
             _typeNameTable[0] = "Xamarin.Forms.Platform.UWP.WindowsPage";
             _typeNameTable[1] = "Xamarin.Forms.Platform.UWP.WindowsBasePage";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.Page";
@@ -221,8 +221,9 @@ namespace AppEvaMovil.UWP.AppEvaMovil_UWP_XamlTypeInfo
             _typeNameTable[4] = "AppEvaMovil.UWP.MainPage";
             _typeNameTable[5] = "Syncfusion.SfAutoComplete.XForms.UWP.ItemViewConverter";
             _typeNameTable[6] = "Object";
+            _typeNameTable[7] = "Syncfusion.XForms.UWP.ComboBox.ItemViewConverter";
 
-            _typeTable = new global::System.Type[7];
+            _typeTable = new global::System.Type[8];
             _typeTable[0] = typeof(global::Xamarin.Forms.Platform.UWP.WindowsPage);
             _typeTable[1] = typeof(global::Xamarin.Forms.Platform.UWP.WindowsBasePage);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.Page);
@@ -230,6 +231,7 @@ namespace AppEvaMovil.UWP.AppEvaMovil_UWP_XamlTypeInfo
             _typeTable[4] = typeof(global::AppEvaMovil.UWP.MainPage);
             _typeTable[5] = typeof(global::Syncfusion.SfAutoComplete.XForms.UWP.ItemViewConverter);
             _typeTable[6] = typeof(global::System.Object);
+            _typeTable[7] = typeof(global::Syncfusion.XForms.UWP.ComboBox.ItemViewConverter);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -267,6 +269,7 @@ namespace AppEvaMovil.UWP.AppEvaMovil_UWP_XamlTypeInfo
         private object Activate_0_WindowsPage() { return new global::Xamarin.Forms.Platform.UWP.WindowsPage(); }
         private object Activate_4_MainPage() { return new global::AppEvaMovil.UWP.MainPage(); }
         private object Activate_5_ItemViewConverter() { return new global::Syncfusion.SfAutoComplete.XForms.UWP.ItemViewConverter(); }
+        private object Activate_7_ItemViewConverter() { return new global::Syncfusion.XForms.UWP.ComboBox.ItemViewConverter(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -314,6 +317,13 @@ namespace AppEvaMovil.UWP.AppEvaMovil_UWP_XamlTypeInfo
             case 6:   //  Object
                 xamlType = new global::AppEvaMovil.UWP.AppEvaMovil_UWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
+
+            case 7:   //  Syncfusion.XForms.UWP.ComboBox.ItemViewConverter
+                userType = new global::AppEvaMovil.UWP.AppEvaMovil_UWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_7_ItemViewConverter;
+                userType.SetIsBindable();
+                xamlType = userType;
+                break;
             }
             return xamlType;
         }
@@ -328,6 +338,8 @@ namespace AppEvaMovil.UWP.AppEvaMovil_UWP_XamlTypeInfo
                     var otherProviders = new global::System.Collections.Generic.List<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider>();
                     global::Windows.UI.Xaml.Markup.IXamlMetadataProvider provider;
                     provider = new global::Syncfusion.XForms.UWP.Core.Syncfusion_Core_XForms_UWP_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
+                    otherProviders.Add(provider); 
+                    provider = new global::Syncfusion.XForms.UWP.combobox.Syncfusion_SfComboBox_XForms_UWP_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
                     otherProviders.Add(provider); 
                     provider = new global::Syncfusion.UI.Xaml.Controls.Input.Syncfusion_SfInput_UWP_2015_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
                     otherProviders.Add(provider); 

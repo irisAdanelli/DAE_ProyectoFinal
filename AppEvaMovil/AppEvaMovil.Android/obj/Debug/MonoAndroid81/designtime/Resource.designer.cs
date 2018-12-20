@@ -68,6 +68,28 @@ namespace AppEvaMovil.Droid
 			global::Com.Syncfusion.Autocomplete.Resource.Styleable.SfAutoComplete_autocompleteTextSize = global::AppEvaMovil.Droid.Resource.Styleable.SfAutoComplete_autocompleteTextSize;
 			global::Com.Syncfusion.Autocomplete.Resource.Styleable.SfAutoComplete_autocompleteWatermark = global::AppEvaMovil.Droid.Resource.Styleable.SfAutoComplete_autocompleteWatermark;
 			global::Com.Syncfusion.Autocomplete.Resource.Styleable.SfAutoComplete_autocompleteWatermarkColor = global::AppEvaMovil.Droid.Resource.Styleable.SfAutoComplete_autocompleteWatermarkColor;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Attribute.layoutManager = global::AppEvaMovil.Droid.Resource.Attribute.layoutManager;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Attribute.reverseLayout = global::AppEvaMovil.Droid.Resource.Attribute.reverseLayout;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Attribute.spanCount = global::AppEvaMovil.Droid.Resource.Attribute.spanCount;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Attribute.stackFromEnd = global::AppEvaMovil.Droid.Resource.Attribute.stackFromEnd;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::AppEvaMovil.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::AppEvaMovil.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::AppEvaMovil.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Drawable.dropdownbuttonimage = global::AppEvaMovil.Droid.Resource.Drawable.dropdownbuttonimage;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Drawable.Icon = global::AppEvaMovil.Droid.Resource.Drawable.Icon;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Id.Itemname = global::AppEvaMovil.Droid.Resource.Id.Itemname;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Id.icon = global::AppEvaMovil.Droid.Resource.Id.icon;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Id.item_touch_helper_previous_elevation = global::AppEvaMovil.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Layout.CustomizedImageView = global::AppEvaMovil.Droid.Resource.Layout.CustomizedImageView;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Layout.CustomizedView = global::AppEvaMovil.Droid.Resource.Layout.CustomizedView;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Layout.sfcomboBox_layout = global::AppEvaMovil.Droid.Resource.Layout.sfcomboBox_layout;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Styleable.RecyclerView = global::AppEvaMovil.Droid.Resource.Styleable.RecyclerView;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Styleable.RecyclerView_android_descendantFocusability = global::AppEvaMovil.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Styleable.RecyclerView_android_orientation = global::AppEvaMovil.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Styleable.RecyclerView_layoutManager = global::AppEvaMovil.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Styleable.RecyclerView_reverseLayout = global::AppEvaMovil.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Styleable.RecyclerView_spanCount = global::AppEvaMovil.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Styleable.RecyclerView_stackFromEnd = global::AppEvaMovil.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
 			global::Syncfusion.SfDataGrid.XForms.Droid.Resource.Attribute.allowNull = global::AppEvaMovil.Droid.Resource.Attribute.allowNull;
 			global::Syncfusion.SfDataGrid.XForms.Droid.Resource.Attribute.borderColor = global::AppEvaMovil.Droid.Resource.Attribute.borderColor;
 			global::Syncfusion.SfDataGrid.XForms.Droid.Resource.Attribute.culture = global::AppEvaMovil.Droid.Resource.Attribute.culture;
@@ -2549,6 +2571,12 @@ namespace AppEvaMovil.Droid
 			// aapt resource value: 0x7F09005B
 			public const int design_snackbar_background = 2131296347;
 			
+			// aapt resource value: 0x7F060006
+			public const int dropdownbuttonimage = 2131099654;
+			
+			// aapt resource value: 0x7F060007
+			public const int Icon = 2131099655;
+			
 			// aapt resource value: 0x7F090054
 			public const int ic_audiotrack_dark = 2131296340;
 			
@@ -3909,6 +3937,9 @@ namespace AppEvaMovil.Droid
 			// aapt resource value: 0x7F0F001A
 			public const int abc_select_dialog_material = 2131689498;
 			
+			// aapt resource value: 0x7F020007
+			public const int CustomizedImageView = 2130837511;
+			
 			// aapt resource value: 0x7F020004
 			public const int CustomizedView = 2130837508;
 			
@@ -4020,8 +4051,8 @@ namespace AppEvaMovil.Droid
 			// aapt resource value: 0x7F0F0006
 			public const int notification_template_part_time = 2131689478;
 			
-			// aapt resource value: 0x7F020007
-			public const int ScrollViewer = 2130837511;
+			// aapt resource value: 0x7F020009
+			public const int ScrollViewer = 2130837513;
 			
 			// aapt resource value: 0x7F0F0038
 			public const int select_dialog_item_material = 2131689528;
@@ -4034,6 +4065,9 @@ namespace AppEvaMovil.Droid
 			
 			// aapt resource value: 0x7F020006
 			public const int sfautocomplete_layout = 2130837510;
+			
+			// aapt resource value: 0x7F020008
+			public const int sfcomboBox_layout = 2130837512;
 			
 			// aapt resource value: 0x7F0F003B
 			public const int support_simple_spinner_dropdown_item = 2131689531;

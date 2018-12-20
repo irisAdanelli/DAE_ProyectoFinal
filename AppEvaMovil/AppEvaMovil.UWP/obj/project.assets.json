@@ -716,7 +716,7 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/16.3.0.21": {
+      "Syncfusion.Licensing/16.3.0.36": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -725,10 +725,10 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/16.3.0.21": {
+      "Syncfusion.Xamarin.Core/16.3.0.36": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "16.3.0.21"
+          "Syncfusion.Licensing": "16.3.0.36"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.Core.XForms.UWP.dll": {},
@@ -765,6 +765,21 @@
           "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.dll": {},
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {},
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfComboBox/16.3.0.36": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "16.3.0.36",
+          "Xamarin.Forms": "2.5.1.527436"
+        },
+        "compile": {
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.dll": {}
         }
       },
       "Syncfusion.Xamarin.SfDataGrid/16.3.0.21": {
@@ -1512,6 +1527,7 @@
           "Newtonsoft.Json": "11.0.2",
           "Scorchio.NinjaCoder.Xamarin.Forms.Core": "2.0.0",
           "Syncfusion.Xamarin.SfAutoComplete": "16.3.0.21",
+          "Syncfusion.Xamarin.SfComboBox": "16.3.0.36",
           "Syncfusion.Xamarin.SfDataGrid": "16.3.0.21",
           "Syncfusion.Xamarin.SfNumericUpDown": "16.3.0.21",
           "System.Buffers": "4.5.0",
@@ -2580,7 +2596,7 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/16.3.0.21": {
+      "Syncfusion.Licensing/16.3.0.36": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -2589,10 +2605,10 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/16.3.0.21": {
+      "Syncfusion.Xamarin.Core/16.3.0.36": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "16.3.0.21"
+          "Syncfusion.Licensing": "16.3.0.36"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.Core.XForms.UWP.dll": {},
@@ -2629,6 +2645,21 @@
           "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.dll": {},
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {},
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfComboBox/16.3.0.36": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "16.3.0.36",
+          "Xamarin.Forms": "2.5.1.527436"
+        },
+        "compile": {
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.dll": {}
         }
       },
       "Syncfusion.Xamarin.SfDataGrid/16.3.0.21": {
@@ -3365,6 +3396,7 @@
           "Newtonsoft.Json": "11.0.2",
           "Scorchio.NinjaCoder.Xamarin.Forms.Core": "2.0.0",
           "Syncfusion.Xamarin.SfAutoComplete": "16.3.0.21",
+          "Syncfusion.Xamarin.SfComboBox": "16.3.0.36",
           "Syncfusion.Xamarin.SfDataGrid": "16.3.0.21",
           "Syncfusion.Xamarin.SfNumericUpDown": "16.3.0.21",
           "System.Buffers": "4.5.0",
@@ -4485,7 +4517,7 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/16.3.0.21": {
+      "Syncfusion.Licensing/16.3.0.36": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -4494,10 +4526,10 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/16.3.0.21": {
+      "Syncfusion.Xamarin.Core/16.3.0.36": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "16.3.0.21"
+          "Syncfusion.Licensing": "16.3.0.36"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.Core.XForms.UWP.dll": {},
@@ -4534,6 +4566,21 @@
           "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.dll": {},
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {},
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfComboBox/16.3.0.36": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "16.3.0.36",
+          "Xamarin.Forms": "2.5.1.527436"
+        },
+        "compile": {
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.dll": {}
         }
       },
       "Syncfusion.Xamarin.SfDataGrid/16.3.0.21": {
@@ -5317,6 +5364,7 @@
           "Newtonsoft.Json": "11.0.2",
           "Scorchio.NinjaCoder.Xamarin.Forms.Core": "2.0.0",
           "Syncfusion.Xamarin.SfAutoComplete": "16.3.0.21",
+          "Syncfusion.Xamarin.SfComboBox": "16.3.0.36",
           "Syncfusion.Xamarin.SfDataGrid": "16.3.0.21",
           "Syncfusion.Xamarin.SfNumericUpDown": "16.3.0.21",
           "System.Buffers": "4.5.0",
@@ -6207,7 +6255,7 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/16.3.0.21": {
+      "Syncfusion.Licensing/16.3.0.36": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -6216,10 +6264,10 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/16.3.0.21": {
+      "Syncfusion.Xamarin.Core/16.3.0.36": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "16.3.0.21"
+          "Syncfusion.Licensing": "16.3.0.36"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.Core.XForms.UWP.dll": {},
@@ -6256,6 +6304,21 @@
           "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.dll": {},
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {},
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfComboBox/16.3.0.36": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "16.3.0.36",
+          "Xamarin.Forms": "2.5.1.527436"
+        },
+        "compile": {
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.dll": {}
         }
       },
       "Syncfusion.Xamarin.SfDataGrid/16.3.0.21": {
@@ -6992,6 +7055,7 @@
           "Newtonsoft.Json": "11.0.2",
           "Scorchio.NinjaCoder.Xamarin.Forms.Core": "2.0.0",
           "Syncfusion.Xamarin.SfAutoComplete": "16.3.0.21",
+          "Syncfusion.Xamarin.SfComboBox": "16.3.0.36",
           "Syncfusion.Xamarin.SfDataGrid": "16.3.0.21",
           "Syncfusion.Xamarin.SfNumericUpDown": "16.3.0.21",
           "System.Buffers": "4.5.0",
@@ -8060,7 +8124,7 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/16.3.0.21": {
+      "Syncfusion.Licensing/16.3.0.36": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -8069,10 +8133,10 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/16.3.0.21": {
+      "Syncfusion.Xamarin.Core/16.3.0.36": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "16.3.0.21"
+          "Syncfusion.Licensing": "16.3.0.36"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.Core.XForms.UWP.dll": {},
@@ -8109,6 +8173,21 @@
           "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.dll": {},
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {},
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfComboBox/16.3.0.36": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "16.3.0.36",
+          "Xamarin.Forms": "2.5.1.527436"
+        },
+        "compile": {
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.dll": {}
         }
       },
       "Syncfusion.Xamarin.SfDataGrid/16.3.0.21": {
@@ -8845,6 +8924,7 @@
           "Newtonsoft.Json": "11.0.2",
           "Scorchio.NinjaCoder.Xamarin.Forms.Core": "2.0.0",
           "Syncfusion.Xamarin.SfAutoComplete": "16.3.0.21",
+          "Syncfusion.Xamarin.SfComboBox": "16.3.0.36",
           "Syncfusion.Xamarin.SfDataGrid": "16.3.0.21",
           "Syncfusion.Xamarin.SfNumericUpDown": "16.3.0.21",
           "System.Buffers": "4.5.0",
@@ -9965,7 +10045,7 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/16.3.0.21": {
+      "Syncfusion.Licensing/16.3.0.36": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -9974,10 +10054,10 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/16.3.0.21": {
+      "Syncfusion.Xamarin.Core/16.3.0.36": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "16.3.0.21"
+          "Syncfusion.Licensing": "16.3.0.36"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.Core.XForms.UWP.dll": {},
@@ -10014,6 +10094,21 @@
           "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.dll": {},
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {},
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfComboBox/16.3.0.36": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "16.3.0.36",
+          "Xamarin.Forms": "2.5.1.527436"
+        },
+        "compile": {
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.dll": {}
         }
       },
       "Syncfusion.Xamarin.SfDataGrid/16.3.0.21": {
@@ -10797,6 +10892,7 @@
           "Newtonsoft.Json": "11.0.2",
           "Scorchio.NinjaCoder.Xamarin.Forms.Core": "2.0.0",
           "Syncfusion.Xamarin.SfAutoComplete": "16.3.0.21",
+          "Syncfusion.Xamarin.SfComboBox": "16.3.0.36",
           "Syncfusion.Xamarin.SfDataGrid": "16.3.0.21",
           "Syncfusion.Xamarin.SfNumericUpDown": "16.3.0.21",
           "System.Buffers": "4.5.0",
@@ -11865,7 +11961,7 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/16.3.0.21": {
+      "Syncfusion.Licensing/16.3.0.36": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -11874,10 +11970,10 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/16.3.0.21": {
+      "Syncfusion.Xamarin.Core/16.3.0.36": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "16.3.0.21"
+          "Syncfusion.Licensing": "16.3.0.36"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.Core.XForms.UWP.dll": {},
@@ -11914,6 +12010,21 @@
           "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.dll": {},
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {},
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfComboBox/16.3.0.36": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "16.3.0.36",
+          "Xamarin.Forms": "2.5.1.527436"
+        },
+        "compile": {
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.dll": {}
         }
       },
       "Syncfusion.Xamarin.SfDataGrid/16.3.0.21": {
@@ -12650,6 +12761,7 @@
           "Newtonsoft.Json": "11.0.2",
           "Scorchio.NinjaCoder.Xamarin.Forms.Core": "2.0.0",
           "Syncfusion.Xamarin.SfAutoComplete": "16.3.0.21",
+          "Syncfusion.Xamarin.SfComboBox": "16.3.0.36",
           "Syncfusion.Xamarin.SfDataGrid": "16.3.0.21",
           "Syncfusion.Xamarin.SfNumericUpDown": "16.3.0.21",
           "System.Buffers": "4.5.0",
@@ -13770,7 +13882,7 @@
           "lib/uap10.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
-      "Syncfusion.Licensing/16.3.0.21": {
+      "Syncfusion.Licensing/16.3.0.36": {
         "type": "package",
         "compile": {
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
@@ -13779,10 +13891,10 @@
           "lib/uap10.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/16.3.0.21": {
+      "Syncfusion.Xamarin.Core/16.3.0.36": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "16.3.0.21"
+          "Syncfusion.Licensing": "16.3.0.36"
         },
         "compile": {
           "lib/uap10.0/Syncfusion.Core.XForms.UWP.dll": {},
@@ -13819,6 +13931,21 @@
           "lib/uap10.0/Syncfusion.SfAutoComplete.XForms.dll": {},
           "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {},
           "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfComboBox/16.3.0.36": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "16.3.0.36",
+          "Xamarin.Forms": "2.5.1.527436"
+        },
+        "compile": {
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfComboBox.XForms.dll": {}
         }
       },
       "Syncfusion.Xamarin.SfDataGrid/16.3.0.21": {
@@ -14602,6 +14729,7 @@
           "Newtonsoft.Json": "11.0.2",
           "Scorchio.NinjaCoder.Xamarin.Forms.Core": "2.0.0",
           "Syncfusion.Xamarin.SfAutoComplete": "16.3.0.21",
+          "Syncfusion.Xamarin.SfComboBox": "16.3.0.36",
           "Syncfusion.Xamarin.SfDataGrid": "16.3.0.21",
           "Syncfusion.Xamarin.SfNumericUpDown": "16.3.0.21",
           "System.Buffers": "4.5.0",
@@ -19501,10 +19629,10 @@
         "sqlitepclraw.provider.e_sqlite3.uwp10.nuspec"
       ]
     },
-    "Syncfusion.Licensing/16.3.0.21": {
-      "sha512": "3eUgJfio0CJDZfelQcZPKe6jpC670ysA6tbDda3ZjvnqYr7rDnMlRlOFWeyXgKrc4X0UZpS8eitIlBrb3F6SaA==",
+    "Syncfusion.Licensing/16.3.0.36": {
+      "sha512": "0fOgFIP7I19QutnlFjwZjAP5l2SFXE7gHuwg9j2TORPG2o8hNxQsqAFo5+Cz4xFkuk2uindftVh8JDNWzRx5vA==",
       "type": "package",
-      "path": "syncfusion.licensing/16.3.0.21",
+      "path": "syncfusion.licensing/16.3.0.36",
       "files": [
         ".signature.p7s",
         "lib/MonoAndroid10/Syncfusion.Licensing.dll",
@@ -19522,14 +19650,14 @@
         "lib/netstandard2.0/Syncfusion.Licensing.dll",
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
         "lib/uap10.0/Syncfusion.Licensing.dll",
-        "syncfusion.licensing.16.3.0.21.nupkg.sha512",
+        "syncfusion.licensing.16.3.0.36.nupkg.sha512",
         "syncfusion.licensing.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.Core/16.3.0.21": {
-      "sha512": "EFLv200KESWBR9HhsOvh6Vaa9BirzZ0YPL/gmwiuAHx4QWWn/D2h+g5C/pi6zA+25heZx2fSbQWpkG/23ca3rA==",
+    "Syncfusion.Xamarin.Core/16.3.0.36": {
+      "sha512": "cbhuoZZR0SxpsiKBWS1sNFPGGC63z3b5QDFmdFcrpCjYc/6c8H/RIC+0HJb3pJ2kMLOp7wIX8UjyRmI4uHScCQ==",
       "type": "package",
-      "path": "syncfusion.xamarin.core/16.3.0.21",
+      "path": "syncfusion.xamarin.core/16.3.0.36",
       "files": [
         ".signature.p7s",
         "lib/MonoAndroid10/Syncfusion.Core.XForms.Android.dll",
@@ -19537,7 +19665,6 @@
         "lib/MonoAndroid10/Syncfusion.Core.XForms.xml",
         "lib/Xamarin.Mac/Syncfusion.Core.XForms.dll",
         "lib/Xamarin.Mac/Syncfusion.Core.XForms.macOS.dll",
-        "lib/Xamarin.Mac/Syncfusion.Core.XForms.xml",
         "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll",
         "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll",
         "lib/Xamarin.iOS10/Syncfusion.Core.XForms.xml",
@@ -19554,7 +19681,7 @@
         "lib/uap10.0/Syncfusion.Core.XForms.UWP/ToggleIcons/ToggleVisibleIcon.xbf",
         "lib/uap10.0/Syncfusion.Core.XForms.dll",
         "lib/uap10.0/Syncfusion.Core.XForms.xml",
-        "syncfusion.xamarin.core.16.3.0.21.nupkg.sha512",
+        "syncfusion.xamarin.core.16.3.0.36.nupkg.sha512",
         "syncfusion.xamarin.core.nuspec"
       ]
     },
@@ -19625,6 +19752,35 @@
         "lib/uap10.0/Syncfusion.SfShared.UWP/Themes/generic.xbf",
         "syncfusion.xamarin.sfautocomplete.16.3.0.21.nupkg.sha512",
         "syncfusion.xamarin.sfautocomplete.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.SfComboBox/16.3.0.36": {
+      "sha512": "y5Z70QGD23OO4gAz4vo972POAms7rYAFwOV1KRVEz271YxOfQhKntP+hR8zMVYY5Mno+VUNrOGweEuQd8EiFGA==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfcombobox/16.3.0.36",
+      "files": [
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.SfComboBox.XForms.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfComboBox.XForms.dll",
+        "lib/MonoAndroid10/Syncfusion.SfComboBox.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfComboBox.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfComboBox.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfComboBox.XForms.xml",
+        "lib/netstandard1.0/Syncfusion.SfComboBox.XForms.dll",
+        "lib/netstandard1.0/Syncfusion.SfComboBox.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfComboBox.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfComboBox.XForms.xml",
+        "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP.pri",
+        "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP/Properties/Syncfusion.SfComboBox.XForms.UWP.rd.xml",
+        "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP/Syncfusion.SfComboBox.XForms.UWP.xr.xml",
+        "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP/Themes/Generic.xaml",
+        "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP/Themes/Generic.xbf",
+        "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP/dropdownbuttonimage.png",
+        "lib/uap10.0/Syncfusion.SfComboBox.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfComboBox.XForms.xml",
+        "syncfusion.xamarin.sfcombobox.16.3.0.36.nupkg.sha512",
+        "syncfusion.xamarin.sfcombobox.nuspec"
       ]
     },
     "Syncfusion.Xamarin.SfDataGrid/16.3.0.21": {
@@ -22247,6 +22403,7 @@
       "AppEvaMovil >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Sqlite >= 2.1.4",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.1.5",
+      "Syncfusion.Xamarin.SfComboBox >= 16.3.0.36",
       "Xamarin.Forms >= 3.4.0.1008975"
     ]
   },
@@ -22298,6 +22455,10 @@
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
             "version": "[6.1.5, )"
+          },
+          "Syncfusion.Xamarin.SfComboBox": {
+            "target": "Package",
+            "version": "[16.3.0.36, )"
           },
           "Xamarin.Forms": {
             "target": "Package",

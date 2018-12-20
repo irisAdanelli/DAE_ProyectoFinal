@@ -49,6 +49,13 @@ namespace AppEvaMovil.ViewModels.Base
 
             // Servicios
             builder.RegisterType<FicSrvNavigation>().As<IFicSrvNavigation>().SingleInstance();
+
+            //SERVICIO DE CATALOGOS
+            builder.RegisterType<FicSrvCatGenerales>().As<IFicSrvCatGenerales>().SingleInstance();
+            builder.RegisterType<FicSrvCatTipoGenerales>().As<IFicSrvCatTipoGenerales>().SingleInstance();
+            builder.RegisterType<FicSrvCatEstatus>().As<IFicSrvCatEstatus>().SingleInstance();
+            builder.RegisterType<FicSrvCatTipoEstatus>().As<IFicSrvCatTipoEstatus>().SingleInstance();
+
             //builder.RegisterType<FicSrvApp>().As<IFicSrvApp>();
             // builder.RegisterType<FicSrvImportarWebApi>().As<IFicSrvImportarWebApi>();
             // builder.RegisterType<FicSrvExportarWebApi>().As<IFicSrvExportarWebApi>();
@@ -145,7 +152,8 @@ namespace AppEvaMovil.ViewModels.Base
         {
             get { return FicContainer.Resolve<FicVmMenuPrincipal>(); }
         }
-
+        //catalogos no hay jjajaj se me olvidaba, y ahora???
+       
 
 
 

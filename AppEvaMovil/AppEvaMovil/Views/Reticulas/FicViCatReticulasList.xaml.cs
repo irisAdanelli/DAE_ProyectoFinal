@@ -1,4 +1,5 @@
-﻿using AppEvaMovil.Services;
+﻿using AppEvaMovil.Models;
+using AppEvaMovil.Services;
 using AppEvaMovil.ViewModels.Reticulas;
 using System;
 using System.Collections.Generic;
@@ -20,12 +21,16 @@ namespace AppEvaMovil.Views.Reticulas
             BindingContext = App.FicMetLocator.FicVmCatReticulas;
             this.FicParameter = null;
             service = new FicSrvCatReticulas();
+            serviceCatGen = new FicSrvCatGenerales();
+            serviceCatTipGen = new FicSrvCatTipoGenerales();
         }
 
 
         //private readonly FicDBContext FicLoBDContext;
         private object FicParameter { get; set; }
         FicSrvCatReticulas service { get; set; }
+        FicSrvCatTipoGenerales serviceCatTipGen { get; set; }
+        FicSrvCatGenerales serviceCatGen { get; set; }
 
 
         public FicViCatReticulasList(object ficParameter)
@@ -34,6 +39,8 @@ namespace AppEvaMovil.Views.Reticulas
             BindingContext = App.FicMetLocator.FicVmCatReticulas;
             this.FicParameter = ficParameter;
             service = new FicSrvCatReticulas();
+            serviceCatGen = new FicSrvCatGenerales();
+            serviceCatTipGen = new FicSrvCatTipoGenerales();
         }
 
         //Command="{Binding FicMetDeleteCommand}"
@@ -57,19 +64,42 @@ namespace AppEvaMovil.Views.Reticulas
         {
             string filtro = FicSearchBar.Text;
             var source = BindingContext as FicVmCatReticulas;
+            
             if (filtro == null || source.SfDataGrid_ItemSource_Reticulas == null)
             {
                 return;
             }
             filtro = filtro.ToLower();
             var resultReticulas = await service.FicMetGetListReticulas();
+            var ct = await serviceCatGen.FicMetGetListGenerales();
+            var ctg = await serviceCatTipGen.FicMetGetListTipoGenerales();
+
             source.SfDataGrid_ItemSource_Reticulas.Clear();
             foreach (var Reticulas in resultReticulas)
             {
                 if ((Reticulas.IdReticula + "").ToLower().Contains(filtro) || (Reticulas.DesReticula + "").ToLower().Contains(filtro) ||
                     (Reticulas.Clave + "").ToLower().Contains(filtro) || (Reticulas.UsuarioMod + "").ToLower().Contains(filtro))
                 {
-                    source.SfDataGrid_ItemSource_Reticulas.Add(Reticulas);
+                    eva_cat_reticulas_aux temporal = new eva_cat_reticulas_aux()
+                    {
+                        IdTipoGenPlanEstudios = Reticulas.IdTipoGenPlanEstudios,
+                        IdGenPlanEstudios = Reticulas.IdGenPlanEstudios,
+                        IdReticula = Reticulas.IdReticula,
+                        Clave = Reticulas.Clave,
+                        DesReticula = Reticulas.DesReticula,
+                        Actual = Reticulas.Actual,
+                        FechaIni = Reticulas.FechaIni,
+                        FechaFin = Reticulas.FechaFin,
+                        FechaReg = Reticulas.FechaReg,
+                        UsuarioReg = Reticulas.UsuarioReg,
+                        FechaUltMod = Reticulas.FechaUltMod,
+                        UsuarioMod = Reticulas.UsuarioMod,
+                        Activo = Reticulas.Activo,
+                        Borrado = Reticulas.Borrado,
+                        DesGenPlanEstudios = ct.First<cat_generales>(cg => cg.IdGeneral == Reticulas.IdGenPlanEstudios).DesGeneral,
+                        DesTipoGenPlanEstudios = ctg.First<cat_tipo_generales>(cg => cg.IdTipoGeneral == Reticulas.IdTipoGenPlanEstudios).DesTipo
+                    };
+                    source.SfDataGrid_ItemSource_Reticulas.Add(temporal);
                 }
             }
             dataGrid.View.Refresh();

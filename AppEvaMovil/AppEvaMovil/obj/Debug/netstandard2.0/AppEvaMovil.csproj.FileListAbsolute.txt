@@ -1,6 +1,3 @@
-C:\Users\Hector\source\repos\AppEvaMovil\AppEvaMovil\AppEvaMovil\bin\Debug\netstandard2.0\AppEvaMovil.deps.json
-C:\Users\Hector\source\repos\AppEvaMovil\AppEvaMovil\AppEvaMovil\bin\Debug\netstandard2.0\AppEvaMovil.dll
-C:\Users\Hector\source\repos\AppEvaMovil\AppEvaMovil\AppEvaMovil\bin\Debug\netstandard2.0\AppEvaMovil.pdb
 C:\Users\Hector\source\repos\AppEvaMovil\AppEvaMovil\AppEvaMovil\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\Hector\source\repos\AppEvaMovil\AppEvaMovil\AppEvaMovil\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\Hector\source\repos\AppEvaMovil\AppEvaMovil\AppEvaMovil\obj\Debug\netstandard2.0\Views\AsignaturaAnterior\FicViCatAsignaturaAnteriorInsert.xaml.g.cs
@@ -26,7 +23,10 @@ C:\Users\Hector\source\repos\AppEvaMovil\AppEvaMovil\AppEvaMovil\obj\Debug\netst
 C:\Users\Hector\source\repos\AppEvaMovil\AppEvaMovil\AppEvaMovil\obj\Debug\netstandard2.0\AppEvaMovil.csproj.CoreCompileInputs.cache
 C:\Users\Hector\source\repos\AppEvaMovil\AppEvaMovil\AppEvaMovil\obj\Debug\netstandard2.0\AppEvaMovil.AssemblyInfoInputs.cache
 C:\Users\Hector\source\repos\AppEvaMovil\AppEvaMovil\AppEvaMovil\obj\Debug\netstandard2.0\AppEvaMovil.AssemblyInfo.cs
+C:\Users\Hector\source\repos\AppEvaMovil\AppEvaMovil\AppEvaMovil\bin\Debug\netstandard2.0\AppEvaMovil.deps.json
+C:\Users\Hector\source\repos\AppEvaMovil\AppEvaMovil\AppEvaMovil\bin\Debug\netstandard2.0\AppEvaMovil.dll
+C:\Users\Hector\source\repos\AppEvaMovil\AppEvaMovil\AppEvaMovil\bin\Debug\netstandard2.0\AppEvaMovil.pdb
+C:\Users\Hector\source\repos\AppEvaMovil\AppEvaMovil\AppEvaMovil\obj\Debug\netstandard2.0\AppEvaMovil.csprojAssemblyReference.cache
 C:\Users\Hector\source\repos\AppEvaMovil\AppEvaMovil\AppEvaMovil\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Hector\source\repos\AppEvaMovil\AppEvaMovil\AppEvaMovil\obj\Debug\netstandard2.0\AppEvaMovil.dll
 C:\Users\Hector\source\repos\AppEvaMovil\AppEvaMovil\AppEvaMovil\obj\Debug\netstandard2.0\AppEvaMovil.pdb
-C:\Users\Hector\source\repos\AppEvaMovil\AppEvaMovil\AppEvaMovil\obj\Debug\netstandard2.0\AppEvaMovil.csprojAssemblyReference.cache

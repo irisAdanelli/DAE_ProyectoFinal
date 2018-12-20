@@ -7,7 +7,7 @@
              Title="Reticulas">
 
     <ContentPage.ToolbarItems BackgroundColor="LightCoral">
-        <ToolbarItem 
+        <ToolbarItem  
             Name="Ver Reticulas"
             Command="{Binding FicMetDetailsCommand}">
             <ToolbarItem.Icon>
@@ -87,8 +87,8 @@
                     <Label Text="{Binding AsignaturaAnterior.Borrado}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="7"/>-->
 
                     <syncfusion:GridTextColumn HeaderText="IdReticula" MappingName="IdReticula" />
-                    <syncfusion:GridTextColumn HeaderText="IdTipoGenPlanEstudios" MappingName="IdTipoGenPlanEstudios" />
-                    <syncfusion:GridTextColumn HeaderText="IdGenPlanEstudios" MappingName="IdGenPlanEstudios" />
+                    <syncfusion:GridTextColumn HeaderText="IdTipoGenPlanEstudios" MappingName="DesTipoGenPlanEstudios" />
+                    <syncfusion:GridTextColumn HeaderText="IdGenPlanEstudios" MappingName="DesGenPlanEstudios" />
                     <syncfusion:GridTextColumn HeaderText="Clave"  MappingName="Clave" />
                     <syncfusion:GridTextColumn HeaderText="DesReticula"  MappingName="DesReticula" />
                     <syncfusion:GridTextColumn HeaderText="Actual"  MappingName="Actual" />

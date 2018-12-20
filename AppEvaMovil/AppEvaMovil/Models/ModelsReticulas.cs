@@ -14,10 +14,10 @@ namespace AppEvaMovil.Models
         public Int16 IdEspecialidad { get; set; }
         [StringLength(100)]
         public string DesEspecialidad { get; set; }
-        [StringLength(1)]
-        public string Activo { get; set; }
-        [StringLength(1)]
-        public string Borrado { get; set; }
+        
+        public bool Activo { get; set; }
+       
+        public bool Borrado { get; set; }
         public Nullable<DateTime> FechaReg { get; set; }
         [StringLength(20)]
         public string UsuarioReg { get; set; }
@@ -34,14 +34,14 @@ namespace AppEvaMovil.Models
        
         [StringLength(100)]
         public string DesTipo { get; set; }
-        public Nullable<DateTime> FechaReg { get; set; }
-        public Nullable<DateTime> FechaUltMod { get; set; }
+        public DateTime FechaReg { get; set; }
+        public DateTime FechaUltMod { get; set; }
         public string UsuarioReg { get; set; }
         public string UsuarioMod { get; set; }
-        [StringLength(1)]
-        public string Activo { get; set; }
-        [StringLength(1)]
-        public string Borrado { get; set; }
+       
+        public bool Activo { get; set; }
+     
+        public bool Borrado { get; set; }
     }
     public class cat_generales
     {
@@ -54,14 +54,14 @@ namespace AppEvaMovil.Models
         public string IdLlaveClasifica { get; set; }
         public string Referencia { get; set; }
 
-        public DateTime? FechaReg { get; set; }
-        public Nullable<DateTime> FechaUltMod { get; set; }
+        public DateTime FechaReg { get; set; }
+        public DateTime FechaUltMod { get; set; }
         public string UsuarioReg { get; set; }
         public string UsuarioMod { get; set; }
-        [StringLength(1)]
-        public string Activo { get; set; }
-        [StringLength(1)]
-        public string Borrado { get; set; }
+       
+        public bool Activo { get; set; }
+        
+        public bool Borrado { get; set; }
     }
 
     public class eva_cat_carreras
@@ -230,8 +230,8 @@ namespace AppEvaMovil.Models
         public String Clave { get; set; }
         [StringLength(100)]
         public String DesReticula { get; set; }
-        [StringLength(1)]
-        public String Actual { get; set; }
+        
+        public bool Actual { get; set; }
         public DateTime? FechaIni { get; set; }
         public DateTime? FechaFin { get; set; }
         public DateTime? FechaReg { get; set; }
@@ -240,10 +240,10 @@ namespace AppEvaMovil.Models
         public DateTime? FechaUltMod { get; set; }
         [StringLength(100)]
         public String UsuarioMod { get; set; }
-        [StringLength(1)]
-        public String Activo { get; set; }
-        [StringLength(1)]
-        public String Borrado { get; set; }
+      
+        public bool Activo { get; set; }
+        
+        public bool Borrado { get; set; }
     }
 
 
@@ -270,8 +270,8 @@ namespace AppEvaMovil.Models
         public String DesAsignatura { get; set; }
         [StringLength(100)]
         public String Matricula { get; set; }
-        [StringLength(1)]
-        public String Actual { get; set; }
+        
+        public bool Actual { get; set; }
         public DateTime? FechaPlanEstudios { get; set; }
         [StringLength(100)]
         public String NombreCorto { get; set; }
@@ -283,10 +283,10 @@ namespace AppEvaMovil.Models
         public DateTime? FechaUltMod { get; set; }
         [StringLength(100)]
         public String UsuarioMod { get; set; }
-        [StringLength(1)]
-        public String Activo { get; set; }
-        [StringLength(1)]
-        public String Borrar { get; set; }
+       
+        public bool Activo { get; set; }
+        
+        public bool Borrar { get; set; }
     }
 
     public class cat_estatus
@@ -301,16 +301,16 @@ namespace AppEvaMovil.Models
         public String Clave { get; set; }
         [StringLength(100)]
         public String DesEstatus { get; set; }
-        public DateTime? FechaReg { get; set; }
-        public DateTime? FechaUltMod { get; set; }
+        public DateTime FechaReg { get; set; }
+        public DateTime FechaUltMod { get; set; }
         [StringLength(200)]
         public String UsuarioReg { get; set; }
         [StringLength(200)]
         public String UsuarioMod { get; set; }
-        [StringLength(1)]
-        public String Activo { get; set; }
-        [StringLength(1)]
-        public String Borrado { get; set; }
+       
+        public bool Activo { get; set; }
+        
+        public bool Borrado { get; set; }
     }
 
     public class cat_tipo_estatus
@@ -320,16 +320,16 @@ namespace AppEvaMovil.Models
         public int IdTipoEstatus { get; set; }
         [StringLength(100)]
         public String DesTipo { get; set; }
-        public DateTime? FechaReg { get; set; }
-        public DateTime? FechaUltMod { get; set; }
+        public DateTime FechaReg { get; set; }
+        public DateTime FechaUltMod { get; set; }
         [StringLength(100)]
         public String UsuarioReg { get; set; }
         [StringLength(100)]
         public String UsuarioMod { get; set; }
-        [StringLength(1)]
-        public String Activo { get; set; }
-        [StringLength(1)]
-        public String Borrado { get; set; }
+        
+        public bool Activo { get; set; }
+       
+        public bool Borrado { get; set; }
     }
 
 
@@ -357,16 +357,16 @@ namespace AppEvaMovil.Models
 
         [StringLength(20)]
         public string Especialidad { get; set; }
-        public Nullable<DateTime> FechaReg { get; set; }
-        public Nullable<DateTime> FechaUltMod { get; set; }
+        public DateTime FechaReg { get; set; }
+        public DateTime FechaUltMod { get; set; }
         [StringLength(20)]
         public string UsuarioReg { get; set; }
         [StringLength(20)]
         public string UsuarioMod { get; set; }
-        [StringLength(1)]
-        public string Activo { get; set; }
-        [StringLength(1)]
-        public string Borrado { get; set; }
+        
+        public bool Activo { get; set; }
+       
+        public bool Borrado { get; set; }
     }
 
 
@@ -392,10 +392,10 @@ namespace AppEvaMovil.Models
         public DateTime? FechaUltMod { get; set; }
         [StringLength(100)]
         public String UsuarioMod { get; set; }
-        [StringLength(1)]
-        public String Activo { get; set; }
-        [StringLength(100)]
-        public String Borrado { get; set; }
+       
+        public bool Activo { get; set; }
+       
+        public bool Borrado { get; set; }
     }
 
 

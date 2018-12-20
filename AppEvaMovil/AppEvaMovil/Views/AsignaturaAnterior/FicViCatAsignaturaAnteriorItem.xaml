@@ -49,9 +49,9 @@
                             <Label Text="Borrado: " HorizontalOptions="EndAndExpand" Grid.Column="0" Grid.Row="7"/>
 
 
-                            <Label Text="{Binding AsignaturaAnterior.IdReticula}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="0"/>
-                            <Label Text="{Binding AsignaturaAnterior.IdAsignatura}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="1"/>
-                            <Label Text="{Binding AsignaturaAnterior.IdAsignaturaanterior}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="2"/>
+                            <Label Text="{Binding Reticula}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="0"/>
+                            <Label Text="{Binding Asignatura}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="1"/>
+                            <Label Text="{Binding AsignaturaAnt}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="2"/>
                             <Label Text="{Binding AsignaturaAnterior.FechaReg}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="3"/>
                             <Label Text="{Binding AsignaturaAnterior.FechaUltMod}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="4"/>
                             <Label Text="{Binding AsignaturaAnterior.UsuarioReg}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="5"/>

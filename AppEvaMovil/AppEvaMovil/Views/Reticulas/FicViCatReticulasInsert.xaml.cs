@@ -7,12 +7,13 @@ using AppEvaMovil.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Microsoft.EntityFrameworkCore;
-using System.Data.Common;
+using System.Data.Common; 
 using AppEvaMovil.Interfaces.SQLite;
 using AppEvaMovil.Models;
 using AppEvaMovil.Services;
 using AppEvaMovil.Data;
 using AppEvaMovil.ViewModels.Reticulas;
+using Syncfusion.XForms.ComboBox;
 
 namespace AppEvaMovil.Views.Reticulas
 {
@@ -55,6 +56,8 @@ namespace AppEvaMovil.Views.Reticulas
             var viewModel = BindingContext as FicVmCatReticulasAdd;
             if (viewModel != null) viewModel.OnDisappearing();
         }
+
+       
     }
 }
 

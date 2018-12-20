@@ -7,13 +7,13 @@
             <!--nombre
                  ruta-->
         </ToolbarItem>
-    </ContentPage.ToolbarItems>
+    </ContentPage.ToolbarItems> 
     <ContentPage.Content>
         <ScrollView>
             <StackLayout
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand"
-                Padding="12, 12, 12, 12">
+                Padding="12, 12, 12, 12"> 
                 <ScrollView
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand">
@@ -47,10 +47,11 @@
                         <Label Text="Activo: " HorizontalOptions="EndAndExpand" Grid.Column="0" Grid.Row="6"/>
                         <Label Text="Borrado: " HorizontalOptions="EndAndExpand" Grid.Column="0" Grid.Row="7"/>
 
+                        
 
                         <Label Text="{Binding Reticulas.IdReticula}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="0"/>
-                        <Label Text="{Binding Reticulas.IdTipoGenPlanEstudios}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="1"/>
-                        <Label Text="{Binding Reticulas.IdGenPlanEstudios}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="2"/>
+                        <Label Text="{Binding TipoPlanEstudiosDes}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="1"/>
+                        <Label Text="{Binding PlanEstudiosDes}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="2"/>
                         <Label Text="{Binding Reticulas.Clave}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="3"/>
                         <Label Text="{Binding Reticulas.DesReticula}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="4"/>
                         <Label Text="{Binding Reticulas.Actual}" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="5"/>

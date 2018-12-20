@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using AppEvaMovil.Interfaces.SQLite;
-using AppEvaMovil.Models;
+using AppEvaMovil.Models; 
 using AppEvaMovil.Services;
 using AppEvaMovil.Data;
-using AppEvaMovil.ViewModels.Reticulas;
+using AppEvaMovil.ViewModels.Reticulas; 
 
 namespace AppEvaMovil.Views.Reticulas
 {

@@ -16,6 +16,7 @@
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
     <PackageReference Include="Scorchio.NinjaCoder.Xamarin.Forms.Core" Version="2.0.0" />
     <PackageReference Include="Syncfusion.Xamarin.SfAutoComplete" Version="16.3.0.21" />
+    <PackageReference Include="Syncfusion.Xamarin.SfComboBox" Version="16.3.0.36" />
     <PackageReference Include="Syncfusion.Xamarin.SfDataGrid" Version="16.3.0.21" />
     <PackageReference Include="Syncfusion.Xamarin.SfNumericUpDown" Version="16.3.0.21" />
     <PackageReference Include="System.Buffers" Version="4.5.0" />

@@ -586,13 +586,13 @@
     <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\sqlitepclraw.provider.e_sqlite3.uwp10\1.1.11\lib\uap10.0\SQLitePCLRaw.provider.e_sqlite3.dll">
       <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.licensing\16.3.0.21\lib\uap10.0\Syncfusion.Licensing.dll">
+    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.licensing\16.3.0.36\lib\uap10.0\Syncfusion.Licensing.dll">
       <PackagePath>Syncfusion.Licensing.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.core\16.3.0.21\lib\uap10.0\Syncfusion.Core.XForms.UWP.dll">
+    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.core\16.3.0.36\lib\uap10.0\Syncfusion.Core.XForms.UWP.dll">
       <PackagePath>Syncfusion.Core.XForms.UWP.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.core\16.3.0.21\lib\uap10.0\Syncfusion.Core.XForms.dll">
+    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.core\16.3.0.36\lib\uap10.0\Syncfusion.Core.XForms.dll">
       <PackagePath>Syncfusion.Core.XForms.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.gridcommon\16.3.0.21\lib\uap10.0\Syncfusion.GridCommon.Portable.dll">
@@ -609,6 +609,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.sfautocomplete\16.3.0.21\lib\uap10.0\Syncfusion.SfShared.UWP.dll">
       <PackagePath>Syncfusion.SfShared.UWP.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.sfcombobox\16.3.0.36\lib\uap10.0\Syncfusion.SfComboBox.XForms.UWP.dll">
+      <PackagePath>Syncfusion.SfComboBox.XForms.UWP.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.sfcombobox\16.3.0.36\lib\uap10.0\Syncfusion.SfComboBox.XForms.dll">
+      <PackagePath>Syncfusion.SfComboBox.XForms.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.sfdatagrid\16.3.0.21\lib\uap10.0\Syncfusion.Data.Portable.dll">
       <PackagePath>Syncfusion.Data.Portable.dll</PackagePath>
@@ -784,13 +790,13 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.core\16.3.0.21\lib\uap10.0\Syncfusion.Core.XForms.UWP\Syncfusion.Core.XForms.UWP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.core\16.3.0.36\lib\uap10.0\Syncfusion.Core.XForms.UWP\Syncfusion.Core.XForms.UWP.xr.xml">
       <PackagePath>Syncfusion.Core.XForms.UWP\Syncfusion.Core.XForms.UWP.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.core\16.3.0.21\lib\uap10.0\Syncfusion.Core.XForms.UWP\ToggleIcons\ToggleCollapsedIcon.xbf">
+    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.core\16.3.0.36\lib\uap10.0\Syncfusion.Core.XForms.UWP\ToggleIcons\ToggleCollapsedIcon.xbf">
       <PackagePath>Syncfusion.Core.XForms.UWP\ToggleIcons\ToggleCollapsedIcon.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.core\16.3.0.21\lib\uap10.0\Syncfusion.Core.XForms.UWP\ToggleIcons\ToggleVisibleIcon.xbf">
+    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.core\16.3.0.36\lib\uap10.0\Syncfusion.Core.XForms.UWP\ToggleIcons\ToggleVisibleIcon.xbf">
       <PackagePath>Syncfusion.Core.XForms.UWP\ToggleIcons\ToggleVisibleIcon.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.sfnumericupdown\16.3.0.21\lib\uap10.0\Syncfusion.SfInput.UWP\Syncfusion.SfInput.UWP.xr.xml">
@@ -816,6 +822,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.sfnumericupdown\16.3.0.21\lib\uap10.0\Syncfusion.SfShared.UWP\Themes\generic.xbf">
       <PackagePath>Syncfusion.SfShared.UWP\Themes\generic.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.sfcombobox\16.3.0.36\lib\uap10.0\Syncfusion.SfComboBox.XForms.UWP\dropdownbuttonimage.png">
+      <PackagePath>Syncfusion.SfComboBox.XForms.UWP\dropdownbuttonimage.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.sfcombobox\16.3.0.36\lib\uap10.0\Syncfusion.SfComboBox.XForms.UWP\Syncfusion.SfComboBox.XForms.UWP.xr.xml">
+      <PackagePath>Syncfusion.SfComboBox.XForms.UWP\Syncfusion.SfComboBox.XForms.UWP.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\syncfusion.xamarin.sfcombobox\16.3.0.36\lib\uap10.0\Syncfusion.SfComboBox.XForms.UWP\Themes\Generic.xbf">
+      <PackagePath>Syncfusion.SfComboBox.XForms.UWP\Themes\Generic.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Hector\.nuget\packages\xamarin.forms\3.4.0.1008975\lib\uap10.0\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>

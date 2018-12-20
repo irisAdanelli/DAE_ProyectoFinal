@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
-using AppEvaMovil.Interfaces;
+using AppEvaMovil.Interfaces; 
 using AppEvaMovil.Models;
 
 namespace AppEvaMovil.ViewModels.AsignaturaAnterior
@@ -17,6 +17,7 @@ namespace AppEvaMovil.ViewModels.AsignaturaAnterior
         private IFicSrvNavigation FicLoSrvNavigation;//INTERFAZ NVEGACION
         private IFicSrvAsignaturaAnterior FicLoSrvApp;//INTERFAZ CRUD
         private string _FicLabelIdInv;
+        //DesReticula , DesAsignatura
 
         public FicVmCatAsignaturaAnterior(IFicSrvNavigation FicPaSrvNavigation, IFicSrvAsignaturaAnterior FicPaSrvApp)
         {
