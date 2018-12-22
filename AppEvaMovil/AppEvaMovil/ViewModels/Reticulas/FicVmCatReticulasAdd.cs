@@ -11,7 +11,7 @@ using Xamarin.Forms;
 using AppEvaMovil.Models;
 using AppEvaMovil.Interfaces.Navigation;
 
-namespace AppEvaMovil.ViewModels.Reticulas
+namespace AppEvaMovil.ViewModels.Reticulas 
 {
     public class FicVmCatReticulasAdd : FicViewModelBase
     {
@@ -114,9 +114,9 @@ namespace AppEvaMovil.ViewModels.Reticulas
         {
             base.OnAppearing(navigationContext);
             _Reticulas = new eva_cat_reticulas();
-
-            TipoPlanEstudiosDes = new ObservableCollection<cat_tipo_generales>();
             //OBTENER LOS REGISTROS DE LA TABLA
+            TipoPlanEstudiosDes = new ObservableCollection<cat_tipo_generales>();
+            
             var tempList = await FicLoCatTipoGenerales.FicMetGetListTipoGenerales();//CATALOGO DE TIPOS
             foreach (cat_tipo_generales ctg in tempList)
             {
@@ -128,38 +128,8 @@ namespace AppEvaMovil.ViewModels.Reticulas
             foreach (cat_generales cg in cat_asg)
             {
                 PlanEstudiosDes.Add(cg);
-                //if (temporal.IdGeneral == Reticulas.IdGenPlanEstudios)
-                //{
-                //    PlanEstudiosDes = temporal.DesGeneral;
-                //}
             }
 
         }
-
-
-
-
-
-//        StackLayout layout = new StackLayout()
-//        {
-//            VerticalOptions = LayoutOptions.Start,
-//            HorizontalOptions = LayoutOptions.Start,
-//            Padding = new Thickness(30)
-//        };
-//        List<String> countryNames = new List<String>();
-//        countryNames.Add("Uganda");
-//countryNames.Add("Ukraine");
-//countryNames.Add("United Arab Emirates");
-//countryNames.Add("United Kingdom");
-//countryNames.Add("United States");
-
-//SfComboBox comboBox = new SfComboBox();
-//        comboBox.HeightRequest = 40;
-//comboBox.DataSource = countryNames;
-//comboBox.IsEditableMode = true;
-
-//layout.Children.Add(comboBox); 
-//Content = layout;
-
     }
 }

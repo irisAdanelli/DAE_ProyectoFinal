@@ -4,7 +4,7 @@
              x:Class="AppEvaMovil.Views.Reticulas.FicViCatReticulasItem">
     <ContentPage.ToolbarItems BackgroundColor="LightCoral">
         <ToolbarItem>
-            <!--nombre
+            <!--nombre 
                  ruta-->
         </ToolbarItem>
     </ContentPage.ToolbarItems> 

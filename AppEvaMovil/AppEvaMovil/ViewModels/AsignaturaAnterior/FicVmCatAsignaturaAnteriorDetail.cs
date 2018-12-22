@@ -20,7 +20,10 @@ namespace AppEvaMovil.ViewModels.AsignaturaAnterior
         private IFicSrvNavigation FicLoSrvNavigation;//INTERFAZ NVEGACION
         private IFicSrvAsignaturaAnterior FicLoSrvApp;//INTERFAZ CRUD
         private IFicSrvCatReticulas FicLoCatReticulas;//PARA OBTENER LOS CATALOGO Y YA HACER EL REEMPLAZO DEL ID POR LA DESCRIPCION
-        private IFicSrvCatAsignaturas FicLoCatAsignaturas;
+        private IFicSrvCatAsignaturas FicLoCatAsignaturas; 
+        /// <summary>
+        /// 
+        /// </summary>
 
         private eva_reticula_asignatura_ant _AsignaturaAnterior;
         public eva_reticula_asignatura_ant AsignaturaAnterior
@@ -117,7 +120,11 @@ namespace AppEvaMovil.ViewModels.AsignaturaAnterior
                 {
                     Asignatura = temporal.DesAsignatura;
                 }
+            }
 
+            var cat_asignaturaAnt = await FicLoCatAsignaturas.FicMetGetListAsignaturas();//CATALOGO DE asignaturas anterior
+            foreach (eva_cat_asignaturas temporal in cat_asignaturaAnt)
+            {
                 if (temporal.IdAsignatura == AsignaturaAnterior.IdAsignaturaAnterior)
                 {
                     AsignaturaAnt = temporal.DesAsignatura;

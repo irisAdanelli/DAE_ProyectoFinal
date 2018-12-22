@@ -10,23 +10,58 @@ using Xamarin.Forms;
 using AppEvaMovil.Interfaces; 
 using AppEvaMovil.Models;
 
-namespace AppEvaMovil.ViewModels.AsignaturaAnterior
+namespace AppEvaMovil.ViewModels.AsignaturaAnterior 
 {
     public class FicVmCatAsignaturaAnterior : FicViewModelBase
     {
         private IFicSrvNavigation FicLoSrvNavigation;//INTERFAZ NVEGACION
         private IFicSrvAsignaturaAnterior FicLoSrvApp;//INTERFAZ CRUD
+        private IFicSrvCatReticulas FicLoReticulas; //Inventario Reticulas
+        private IFicSrvCatAsignaturas FicLoAsignaturas; //Inventario Asignaturas
         private string _FicLabelIdInv;
         //DesReticula , DesAsignatura
 
-        public FicVmCatAsignaturaAnterior(IFicSrvNavigation FicPaSrvNavigation, IFicSrvAsignaturaAnterior FicPaSrvApp)
+        public FicVmCatAsignaturaAnterior(IFicSrvNavigation FicPaSrvNavigation, IFicSrvAsignaturaAnterior FicPaSrvApp, IFicSrvCatReticulas FicReticulas, IFicSrvCatAsignaturas FicAsignaturas)
         {
             FicLoSrvNavigation = FicPaSrvNavigation;
             FicLoSrvApp = FicPaSrvApp;
+            FicLoReticulas = FicReticulas;
+            FicLoAsignaturas = FicAsignaturas;
         }
 
-        public ObservableCollection<eva_reticula_asignatura_ant> _SfDataGrid_ItemSource_AsignaturaAnterior;
-        public ObservableCollection<eva_reticula_asignatura_ant> SfDataGrid_ItemSource_AsignaturaAnterior
+        private String _DesReticulas;
+        public String DesReticulas
+        {
+            get { return _DesReticulas; }
+            set
+            {
+                _DesReticulas = value;
+                RaisePropertyChanged();
+            }
+        }
+        private String _DesAsignaturas;
+        public String DesAsignaturas
+        {
+            get { return _DesAsignaturas; }
+            set
+            {
+                _DesAsignaturas = value;
+                RaisePropertyChanged();
+            }
+        }
+        private String _DesAsignaturaAnterior;
+        public String DesAsignaturaAnterior
+        {
+            get { return _DesAsignaturaAnterior; }
+            set
+            {
+                _DesAsignaturaAnterior = value;
+                RaisePropertyChanged();
+            }
+        }
+
+        public ObservableCollection<eva_reticula_asignatura_ant_aux> _SfDataGrid_ItemSource_AsignaturaAnterior;
+        public ObservableCollection<eva_reticula_asignatura_ant_aux> SfDataGrid_ItemSource_AsignaturaAnterior
         {
             get { return _SfDataGrid_ItemSource_AsignaturaAnterior; }
             set
@@ -36,8 +71,8 @@ namespace AppEvaMovil.ViewModels.AsignaturaAnterior
             }
         }
 
-        private eva_reticula_asignatura_ant _SfDataGrid_SelectItem_AsignaturaAnterior;
-        public eva_reticula_asignatura_ant SfDataGrid_SelectItem_AsignaturaAnterior
+        private eva_reticula_asignatura_ant_aux _SfDataGrid_SelectItem_AsignaturaAnterior;
+        public eva_reticula_asignatura_ant_aux SfDataGrid_SelectItem_AsignaturaAnterior
         {
             get { return _SfDataGrid_SelectItem_AsignaturaAnterior; }
             set
@@ -96,16 +131,41 @@ namespace AppEvaMovil.ViewModels.AsignaturaAnterior
 
         }
 
-        public async override void OnAppearing(object navigationContext)
+        public override async void OnAppearing(object navigationContext)
         {
             base.OnAppearing(navigationContext);
             var resultadoAsignaturaAnterior = await FicLoSrvApp.FicMetGetListAsignaturaAnterior();
 
-            SfDataGrid_ItemSource_AsignaturaAnterior = new ObservableCollection<eva_reticula_asignatura_ant>();
+            //SfDataGrid_ItemSource_AsignaturaAnterior = new ObservableCollection<eva_reticula_asignatura_ant_aux>();
+            SfDataGrid_ItemSource_AsignaturaAnterior = new ObservableCollection<eva_reticula_asignatura_ant_aux>();
 
-            foreach (var asignaturaanterior in resultadoAsignaturaAnterior)
+            //foreach (var asignaturaanterior in resultadoAsignaturaAnterior)
+            //{
+            //    SfDataGrid_ItemSource_AsignaturaAnterior.Add(asignaturaanterior);
+            //}
+
+            //OBTENER LOS REGISTROS DE LA TABLA
+            var cat_reticulas = await FicLoReticulas.FicMetGetListReticulas();//CATALOGO DE Reticulas
+            var cat_asignaturas = await FicLoAsignaturas.FicMetGetListAsignaturas();//CATALOGO DE Asignaturas
+            var cat_asignatura_anterior = await FicLoAsignaturas.FicMetGetListAsignaturas();//CATALOGO DE Asig Anterior
+            foreach (var reticula in resultadoAsignaturaAnterior)
             {
-                SfDataGrid_ItemSource_AsignaturaAnterior.Add(asignaturaanterior);
+                eva_reticula_asignatura_ant_aux temporal = new eva_reticula_asignatura_ant_aux()
+                {
+                    IdAsignatura = reticula.IdAsignatura,
+                    IdAsignaturaAnterior = reticula.IdAsignaturaAnterior,
+                    IdReticula = reticula.IdReticula,
+                    FechaReg = reticula.FechaReg,
+                    UsuarioReg = reticula.UsuarioReg,
+                    FechaUltMod = reticula.FechaUltMod,
+                    UsuarioMod = reticula.UsuarioMod,
+                    Activo = reticula.Activo,
+                    Borrado = reticula.Borrado,
+                    DesReticulas = cat_reticulas.First<eva_cat_reticulas>(cg => cg.IdReticula == reticula.IdReticula).DesReticula,
+                    DesAsignaturas = cat_asignaturas.First<eva_cat_asignaturas>(cg => cg.IdAsignatura == reticula.IdAsignatura).DesAsignatura,
+                    DesAsignaturaAnterior = cat_asignatura_anterior.First<eva_cat_asignaturas>(cg => cg.IdAsignatura == reticula.IdAsignaturaAnterior).DesAsignatura,
+                };
+                SfDataGrid_ItemSource_AsignaturaAnterior.Add(temporal);
             }
         }
 

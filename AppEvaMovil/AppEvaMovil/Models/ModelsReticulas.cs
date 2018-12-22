@@ -4,7 +4,7 @@ using System.Text;
 
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-
+ 
 namespace AppEvaMovil.Models
 {
     public class eva_cat_especialidades
@@ -349,12 +349,10 @@ namespace AppEvaMovil.Models
         public int Semestre { get; set; }
         public int OrderCertificado { get; set; }
         public int CreditosPrerequisito { get; set; }
-
         public int IdTipoEstatus { get; set; }
         public cat_tipo_estatus cat_tipo_estatus { get; set; }
         public int IdEstatus { get; set; }
         public cat_estatus cat_estatus { get; set; }
-
         [StringLength(20)]
         public string Especialidad { get; set; }
         public DateTime FechaReg { get; set; }
@@ -363,9 +361,7 @@ namespace AppEvaMovil.Models
         public string UsuarioReg { get; set; }
         [StringLength(20)]
         public string UsuarioMod { get; set; }
-        
         public bool Activo { get; set; }
-       
         public bool Borrado { get; set; }
     }
 
@@ -383,18 +379,14 @@ namespace AppEvaMovil.Models
         public int IdAsignatura { get; set; }
         public eva_cat_asignaturas eva_cat_asignaturas { get; set; }
         //[Key, Required]
-        
-        
         public int IdAnterior { get; set; }
         public DateTime? FechaReg { get; set; }
         [StringLength(100)]
         public String UsuarioReg { get; set; }
         public DateTime? FechaUltMod { get; set; }
-        [StringLength(100)]
+        [StringLength(100)] 
         public String UsuarioMod { get; set; }
-       
         public bool Activo { get; set; }
-       
         public bool Borrado { get; set; }
     }
 

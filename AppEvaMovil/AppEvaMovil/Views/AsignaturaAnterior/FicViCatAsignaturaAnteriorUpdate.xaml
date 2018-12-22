@@ -7,24 +7,27 @@
   <ContentPage.Content>
         <ScrollView>
             <StackLayout VerticalOptions="StartAndExpand"
-            Padding="20">
+            Padding="20"> 
                 <Label Text="Asignatura"/>
-                <Entry Text="{Binding AsignaturaAnterior.IdAsignatura}"/>
+                <Entry IsEnabled Text="{Binding AsignaturaAnterior.IdAsignatura}"/>
 
                 <Label Text="Asignatura Anterior"/>
-                <Entry Text="{Binding AsignaturaAnterior.IdAsignaturaAnterior}"/>
+                <Entry IsEnabled Text="{Binding AsignaturaAnterior.IdAsignaturaAnterior}"/>
 
                 <Label Text="Id Reticula"/>
-                <Entry Text="{Binding AsignaturaAnterior.IdReticula}"/>
+                <Entry IsEnabled Text="{Binding AsignaturaAnterior.IdReticula}"/>
 
                 <Label Text="Activo: "/>
                 <Entry Text="{Binding Reticulas.Activo}"/>
-                <!--<Switch IsToggled="{Binding Reticulas.Activo}"></Switch>-->
-                <Label Text="Borrado: "/>
-                <Entry Text="{Binding Reticulas.Borrado}"/>
-                <!--<Switch IsToggled="{Binding Reticulas.Borrar}"></Switch>-->
 
-                
+                <Label Text="Activo: "/>
+                <!--<Entry Text="{Binding Reticulas.Activo}"/>-->
+                <Switch IsToggled="{Binding Reticulas.Activo}"></Switch>
+                <Label Text="Borrado: "/>
+                <!--<Entry Text="{Binding Reticulas.Borrado}"/>-->
+                <Switch IsToggled="{Binding Reticulas.Borrar}"></Switch>
+
+
                 <Button Text="Actualizar"  Command="{Binding FicMetUpdateCommand}"/>
                 <Button Text="Cancelar" Command="{Binding BackNavgCommand}"/>
 

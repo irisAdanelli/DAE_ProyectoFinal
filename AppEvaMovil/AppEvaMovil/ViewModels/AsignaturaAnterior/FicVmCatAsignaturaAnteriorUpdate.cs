@@ -9,7 +9,7 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using AppEvaMovil.Models;
 using AppEvaMovil.Interfaces;
-using AppEvaMovil.Interfaces.Navigation;
+using AppEvaMovil.Interfaces.Navigation; 
 
 namespace AppEvaMovil.ViewModels.AsignaturaAnterior
 {

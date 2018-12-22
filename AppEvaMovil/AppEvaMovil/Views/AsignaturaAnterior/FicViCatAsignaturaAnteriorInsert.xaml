@@ -6,7 +6,7 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout
-                VerticalOptions="StartAndExpand"
+                VerticalOptions="StartAndExpand" 
                 Padding="25">
                                     <!--IdAsignatura ClaveAsignatura DesAsignatura Matricula
                                     Actual FechaPlanEstudios NombreCorto
@@ -14,7 +14,24 @@
                                     UsuarioReg Activo Borrar IdGeneralAsignatura
                                     IdTipoGeneralAsignatura IdTipoGeneralNivelEscolar IdGeneralNivelEscolar-->
                 <Label  Text="IdAsignatura"/>
-                <Entry Text="{Binding AsignaturaAnterior.IdAsignatura}"/>
+                <!--<Entry Text="{Binding AsignaturaAnterior.IdAsignatura}"/>-->
+                <Picker BackgroundColor="LightCoral"
+                        ItemsSource="{Binding AsignaturaDesAsignatura}"
+                        ItemDisplayBinding="{Binding DesAsignatura}"
+                        SelectedItem="{Binding Selected_Asignatura}"/>
+                <Label  Text="Id Reticula"/>
+                <!--<Entry Text="{Binding ReticulasAsignaturas.IdReticula}"/>-->
+                <Picker BackgroundColor="LightCoral"
+                        ItemsSource="{Binding ReticulaDesReticula}"
+                        ItemDisplayBinding="{Binding DesReticula}"
+                        SelectedItem="{Binding Selected_Reticula}"/>
+                <Label  Text="IdAsignatura Anterior"/>
+                <!--<Entry Text="{Binding AsignaturaAnterior.IdAsignaturaAnterior}"/>-->
+                <Picker BackgroundColor="LightCoral"
+                        ItemsSource="{Binding AsignaturaDesAsignaturaAnterior}"
+                        ItemDisplayBinding="{Binding DesAsignatura}"
+                        SelectedItem="{Binding Selected_AsignaturaAnterior}"/>
+                
                 <Label  Text="ClaveAsignatura"/>
                 <Entry Text="{Binding AsignaturaAnterior.ClaveAsignatura}"/>
                 <Label Text="DesAsignatura"/>
@@ -75,8 +92,8 @@
                 <Label Text="IdGeneralNivelEscolar "/>
                 <Entry Text="{Binding AsignaturaAnterior.IdGeneralNivelEscolar}"/>
 
-                <Button Text="Agregar"  Command="{Binding FicMetAddCommand}"/>
-                <Button Text="Cancelar" Command="{Binding BackNavgCommand}"/>
+                <Button BackgroundColor="LightCoral" Text="Agregar"  Command="{Binding FicMetAddCommand}"/>
+                <Button BackgroundColor="LightCoral" Text="Cancelar" Command="{Binding BackNavgCommand}"/>
 
             </StackLayout>
         </ScrollView>

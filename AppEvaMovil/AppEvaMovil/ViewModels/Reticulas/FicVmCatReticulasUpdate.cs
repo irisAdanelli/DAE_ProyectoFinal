@@ -12,7 +12,7 @@ using AppEvaMovil.Models;
 using AppEvaMovil.Interfaces.Navigation;
 using AppEvaMovil.Data;
 
-namespace AppEvaMovil.ViewModels.Reticulas
+namespace AppEvaMovil.ViewModels.Reticulas 
 {
     public class FicVmCatReticulasUpdate : FicViewModelBase
     {

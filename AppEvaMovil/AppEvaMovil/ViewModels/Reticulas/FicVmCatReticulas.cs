@@ -13,7 +13,7 @@ using AppEvaMovil.Interfaces.Navigation;
 
 namespace AppEvaMovil.ViewModels.Reticulas
 {
-    public class FicVmCatReticulas : FicViewModelBase
+    public class FicVmCatReticulas : FicViewModelBase 
     {
         private IFicSrvNavigation FicLoSrvNavigation;//INTERFAZ NVEGACION
         private IFicSrvCatReticulas FicLoSrvApp;//INTERFAZ CRUD

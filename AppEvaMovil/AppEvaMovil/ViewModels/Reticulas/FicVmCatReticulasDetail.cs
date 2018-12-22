@@ -9,7 +9,7 @@ using System.Windows.Input;
 using Xamarin.Forms; 
 using AppEvaMovil.Models; 
 using AppEvaMovil.Interfaces.Navigation;
-using AppEvaMovil.ViewModels.Reticulas;
+using AppEvaMovil.ViewModels.Reticulas; 
 
 namespace AppEvaMovil.ViewModels.Reticulas
 {

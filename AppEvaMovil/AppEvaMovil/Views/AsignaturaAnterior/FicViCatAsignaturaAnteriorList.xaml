@@ -4,7 +4,7 @@
               xmlns:syncfusion="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
              x:Class="AppEvaMovil.Views.AsignaturaAnterior.FicViCatAsignaturaAnteriorList"
              Title="Asignatura Anterior">
-    <ContentPage.ToolbarItems>
+    <ContentPage.ToolbarItems> 
         <ToolbarItem 
             Name="Ver Asignatura ant"
             Command="{Binding FicMetDetailsCommand}">
@@ -76,9 +76,9 @@
                 SelectionMode="Single"
                 x:Name="dataGrid">
                     <syncfusion:SfDataGrid.Columns x:TypeArguments="syncfusion:Columns">
-                    <syncfusion:GridTextColumn HeaderText="IdReticula" MappingName="IdReticula" />
-                    <syncfusion:GridTextColumn HeaderText="IdAsignatura" MappingName="IdAsignatura" />
-                    <syncfusion:GridTextColumn HeaderText="IdAsignaturaAnterior" MappingName="IdAsignaturaAnterior" />
+                    <syncfusion:GridTextColumn HeaderText="IdReticula" MappingName="DesReticulas" />
+                    <syncfusion:GridTextColumn HeaderText="IdAsignatura" MappingName="DesAsignaturas" />
+                    <syncfusion:GridTextColumn HeaderText="IdAsignaturaAnterior" MappingName="DesAsignaturaAnterior" />
                     <syncfusion:GridTextColumn HeaderText="UsuarioReg"  MappingName="UsuarioReg" />
                     <syncfusion:GridTextColumn HeaderText="UsuarioMod"  MappingName="UsuarioMod" />
                     <syncfusion:GridTextColumn HeaderText="FechaReg"  MappingName="FechaReg" />

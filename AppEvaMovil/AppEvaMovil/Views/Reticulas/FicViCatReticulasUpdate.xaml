@@ -5,23 +5,24 @@
     <ContentPage.Content >
         <ScrollView >
             <StackLayout VerticalOptions="StartAndExpand"
-            Padding="20">
+            Padding="20"> 
                 <Label  Text="Id Tipo General Plan de Estudios"/>
-                <Entry Text="{Binding Reticulas.IdTipoGenPlanEstudios}" />
+                <Entry IsEnabled="False" Text="{Binding Reticulas.IdTipoGenPlanEstudios}" />
                 <Label  Text="Id General Plan de Estudios"/>
-                <Entry Text="{Binding Reticulas.IdGenPlanEstudios}"/>
+                <Entry IsEnabled="False" Text="{Binding Reticulas.IdGenPlanEstudios}"/>
                 <Label Text="Clave Reticulas"/>
                 <Entry Text="{Binding Reticulas.Clave}"/>
                 <Label Text="Des Reticulas"/>
                 <Entry Text="{Binding Reticulas.DesReticula}"/>
                 <Label Text="Actual"/>
-                <Entry Text="{Binding Reticulas.Actual}"/>
+                <!--<Entry Text="{Binding Reticulas.Actual}"/>-->
+                <Switch IsToggled="{Binding Reticulas.Actual}"></Switch>
                 <Label Text="Activo: "/>
-                <Entry Text="{Binding Reticulas.Activo}"/>
-                <!--<Switch IsToggled="{Binding Reticulas.Activo}"></Switch>-->
+                <!--<Entry Text="{Binding Reticulas.Activo}"/>-->
+                <Switch IsToggled="{Binding Reticulas.Activo}"></Switch>
                 <Label Text="Borrado: "/>
-                <Entry Text="{Binding Reticulas.Borrado}"/>
-                <!--<Switch IsToggled="{Binding Reticulas.Borrar}"></Switch>-->
+                <!--<Entry Text="{Binding Reticulas.Borrado}"/>-->
+                <Switch IsToggled="{Binding Reticulas.Borrar}"></Switch>
 
                 
                 <Button BackgroundColor="LightCoral" Text="Actualizar"  Command="{Binding FicMetUpdateCommand}"/>

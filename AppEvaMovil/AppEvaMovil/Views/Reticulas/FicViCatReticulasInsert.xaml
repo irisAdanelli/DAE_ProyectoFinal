@@ -5,7 +5,7 @@
              x:Class="AppEvaMovil.Views.Reticulas.FicViCatReticulasInsert">
     <!--</ContentPage>-->
     <ContentPage.Content BackgroundColor="LightCoral">
-        <ScrollView>
+        <ScrollView> 
             <StackLayout
                 VerticalOptions="StartAndExpand" 
                 Padding="25">
